@@ -1,0 +1,142 @@
+Warning: Detected pins or ports without physical pin shapes. The first few such pins or ports are: clock, reset_n, uart_rx, miso. (DPPA-325)
+****************************************
+Report : qor
+Design : top_pad_rvx
+Version: W-2024.09-SP3
+Date   : Thu Aug 13 16:18:38 2026
+****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'rvx.dlib:top_pad_rvx.design'. (TIM-125)
+Information: Design Average RC for design top_pad_rvx  (NEX-011)
+Information: r = 1.787934 ohm/um, via_r = 0.478322 ohm/cut, c = 0.073743 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 1.785714 ohm/um, via_r = 0.575054 ohm/cut, c = 0.089528 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'top_pad_rvx'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 39947, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 18, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 1985. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+LLE:                                       disabled
+ML Acceleration:                           off
+Smart Arc Optimization:                    disabled
+************************************************************
+
+
+Scenario           'functional_ff'
+Timing Path Group  'RVX_CLK'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'functional_ff'
+Timing Path Group  'INREG'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'functional_ff'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'functional_ss'
+Timing Path Group  'RVX_CLK'
+----------------------------------------
+Levels of Logic:                    115
+Critical Path Length:              9.29
+Critical Path Slack:              19.71
+Critical Path Clk Period:         30.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'functional_ss'
+Timing Path Group  'INREG'
+----------------------------------------
+Levels of Logic:                     29
+Critical Path Length:              8.42
+Critical Path Slack:              20.58
+Critical Path Clk Period:         30.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'functional_ss'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      1
+Critical Path Length:              4.09
+Critical Path Slack:              24.81
+Critical Path Clk Period:         30.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:            162
+Hierarchical Port Count:          12141
+Leaf Cell Count:                  34049
+Buf/Inv Cell Count:                4853
+Buf Cell Count:                      30
+Inv Cell Count:                    4823
+Combinational Cell Count:         23322
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    0
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:            10727
+   Integrated Clock-Gating Cell Count:                     0
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       0
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            0.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:           264127.50
+Noncombinational Area:             0.00
+Buf/Inv Area:                   5229.01
+Total Buffer Area:                 0.00
+Total Inverter Area:            5229.01
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                   97113.34
+Net YLength:                   49976.89
+----------------------------------------
+Cell Area (netlist):                         264127.50
+Cell Area (netlist and physical only):      2868127.50
+Net Length:                   147090.24
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:             41668
+Nets with Violations:              2197
+Max Trans Violations:              1225
+Max Cap Violations:                1021
+----------------------------------------
+
+1

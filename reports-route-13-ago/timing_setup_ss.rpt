@@ -1,0 +1,941 @@
+Warning: Scenario functional_ff is not configured for setup analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 10
+        -report_by design
+Design : top_pad_rvx
+Version: W-2024.09-SP3
+Date   : Thu Aug 13 05:53:09 2026
+****************************************
+
+  Startpoint: u_core/rvx_i2c_instance/i2c_irq_reg (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[1] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ss
+  Scenario: functional_ss
+  Path Group: RVX_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               314.30    314.30
+
+  u_core/rvx_i2c_instance/i2c_irq_reg/CLK (SDFFX1_RVT)
+                                                   0.00    314.30 r
+  u_core/rvx_i2c_instance/i2c_irq_reg/Q (SDFFX1_RVT)
+                                                  21.61    335.91 r
+  u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[1]/RSTB (SDFFSSRX1_RVT)
+                                                   0.00    335.91 r
+  data arrival time                                        335.91
+
+  clock RVX_CLK (rise edge)                       30.00     30.00
+  clock network delay (propagated)               314.30    344.30
+  u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[1]/CLK (SDFFSSRX1_RVT)
+                                                   0.00    344.30 r
+  clock uncertainty                               -1.00    343.30
+  library setup time                             -219.23   124.07
+  data required time                                       124.07
+  ------------------------------------------------------------------------
+  data required time                                       124.07
+  data arrival time                                        -335.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -211.84
+
+
+
+  Startpoint: u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_uart_instance/read_data_reg[0] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ss
+  Scenario: functional_ss
+  Path Group: RVX_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               314.30    314.30
+
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/CLK (SDFFX2_RVT)
+                                                   0.00    314.30 r
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/Q (SDFFX2_RVT)
+                                                  26.37    340.67 r
+  u_core/ctmi_14515/Y (AOI222X1_RVT)               0.53    341.20 f
+  u_core/rvx_core_instance/copt_gre_mt_inst_49534/Y (NBUFFX4_RVT)
+                                                   0.09    341.29 f
+  u_core/rvx_core_instance/ZBUF_2_inst_32731/Y (NBUFFX8_RVT)
+                                                   0.05    341.34 f
+  u_core/rvx_core_instance/HFSINV_34_18894/Y (INVX4_RVT)
+                                                   0.03    341.37 r
+  u_core/rvx_core_instance/ctmi_39815/Y (AO221X1_RVT)
+                                                   0.12    341.49 r
+  u_core/rvx_core_instance/ctmi_39814/Y (OR3X2_RVT)
+                                                   0.13    341.63 r
+  u_core/rvx_core_instance/ctmi_40978/Y (AO22X1_RVT)
+                                                   0.09    341.72 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/ctmi_10653/Y (AO22X1_RVT)
+                                                   0.11    341.82 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_10/S (FADDX2_RVT)
+                                                   0.18    342.00 f
+  u_core/rvx_core_instance/ropt_d_inst_57452/Y (NBUFFX8_RVT)
+                                                   0.06    342.06 f
+  u_core/rvx_core_instance/ctmi_41569/Y (AOI22X2_RVT)
+                                                   0.13    342.20 r
+  u_core/HFSINV_1730_19813/Y (INVX8_RVT)           0.02    342.22 f
+  u_core/HFSINV_1610_19812/Y (INVX8_RVT)           0.03    342.25 r
+  u_core/A15367/Y (AND3X4_RVT)                     0.15    342.40 r
+  u_core/ctmi_13615/Y (AND3X1_RVT)                 0.09    342.49 r
+  u_core/ctmi_13614/Y (AO221X2_RVT)                0.10    342.59 r
+  u_core/rvx_uart_instance/read_data_reg[0]/D (SDFFSSRX1_RVT)
+                                                   0.00    342.59 r
+  data arrival time                                        342.59
+
+  clock RVX_CLK (rise edge)                       30.00     30.00
+  clock network delay (propagated)               314.30    344.30
+  u_core/rvx_uart_instance/read_data_reg[0]/CLK (SDFFSSRX1_RVT)
+                                                   0.00    344.30 r
+  clock uncertainty                               -1.00    343.30
+  library setup time                             -88.00    255.30
+  data required time                                       255.30
+  ------------------------------------------------------------------------
+  data required time                                       255.30
+  data arrival time                                        -342.59
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -87.29
+
+
+
+  Startpoint: u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_bootloader_rom_instance/rdata_reg[8] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ss
+  Scenario: functional_ss
+  Path Group: RVX_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               314.30    314.30
+
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/CLK (SDFFX2_RVT)
+                                                   0.00    314.30 r
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/Q (SDFFX2_RVT)
+                                                  26.37    340.67 r
+  u_core/ctmi_14515/Y (AOI222X1_RVT)               0.53    341.20 f
+  u_core/rvx_core_instance/copt_gre_mt_inst_49534/Y (NBUFFX4_RVT)
+                                                   0.09    341.29 f
+  u_core/rvx_core_instance/ZBUF_2_inst_32731/Y (NBUFFX8_RVT)
+                                                   0.05    341.34 f
+  u_core/rvx_core_instance/HFSINV_34_18894/Y (INVX4_RVT)
+                                                   0.03    341.37 r
+  u_core/rvx_core_instance/ctmi_39815/Y (AO221X1_RVT)
+                                                   0.12    341.49 r
+  u_core/rvx_core_instance/ctmi_39814/Y (OR3X2_RVT)
+                                                   0.13    341.63 r
+  u_core/rvx_core_instance/ctmi_40978/Y (AO22X1_RVT)
+                                                   0.09    341.72 r
+  u_core/rvx_core_instance/gre_BUF_13_inst_49746/Y (DELLN1X2_RVT)
+                                                   0.23    341.95 r
+  u_core/rvx_core_instance/HFSINV_109_18997/Y (INVX1_RVT)
+                                                   0.03    341.98 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43568/Y (AO22X1_RVT)
+                                                   0.06    342.04 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43566/Y (OA222X1_RVT)
+                                                   0.10    342.14 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43562/Y (OA222X1_RVT)
+                                                   0.08    342.23 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43558/Y (OA222X1_RVT)
+                                                   0.09    342.31 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43554/Y (OA222X1_RVT)
+                                                   0.08    342.39 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43550/Y (OA222X1_RVT)
+                                                   0.08    342.47 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43546/Y (OA222X1_RVT)
+                                                   0.08    342.56 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43542/Y (OA222X1_RVT)
+                                                   0.08    342.64 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43538/Y (OA222X1_RVT)
+                                                   0.09    342.72 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43534/Y (OA222X1_RVT)
+                                                   0.08    342.81 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43530/Y (OA222X1_RVT)
+                                                   0.08    342.89 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43526/Y (OA222X1_RVT)
+                                                   0.08    342.97 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43522/Y (OA222X1_RVT)
+                                                   0.08    343.05 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43518/Y (OA222X1_RVT)
+                                                   0.08    343.14 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43513/Y (OA222X1_RVT)
+                                                   0.09    343.23 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43508/Y (NAND4X0_RVT)
+                                                   0.06    343.29 r
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43581/Y (OA21X1_RVT)
+                                                   0.09    343.38 r
+  u_core/rvx_core_instance/phfnr_buf_16857/Y (INVX2_RVT)
+                                                   0.03    343.41 f
+  u_core/rvx_core_instance/ctmTdsLR_1_21949/Y (OA222X1_RVT)
+                                                   0.12    343.53 f
+  u_core/rvx_core_instance/ctmi_38682/Y (OR4X2_RVT)
+                                                   0.12    343.65 f
+  u_core/rvx_core_instance/ctmi_38675/Y (AND4X1_RVT)
+                                                   0.08    343.73 f
+  u_core/rvx_core_instance/ctmTdsLR_1_21415/Y (OAI222X2_RVT)
+                                                   0.13    343.86 r
+  u_core/rvx_core_instance/HFSINV_242_19742/Y (INVX4_RVT)
+                                                   0.03    343.89 f
+  u_core/rvx_core_instance/ctmTdsLR_1_21688/Y (NAND2X0_RVT)
+                                                   0.06    343.94 r
+  u_core/rvx_core_instance/ctmTdsLR_2_21689/Y (INVX2_RVT)
+                                                   0.04    343.98 f
+  u_core/rvx_core_instance/ZBUF_984_inst_34803/Y (NBUFFX16_RVT)
+                                                   0.06    344.04 f
+  u_core/rvx_core_instance/ctmi_41750/Y (AO221X2_RVT)
+                                                   0.12    344.16 f
+  u_core/rvx_core_instance/ctmi_41749/Y (AO22X2_RVT)
+                                                   0.13    344.29 f
+  u_core/ctmi_13816/Y (NOR2X2_RVT)                 0.11    344.40 r
+  u_core/ctmi_13843/Y (AND2X1_RVT)                 0.08    344.48 r
+  u_core/ctmi_13928/Y (AND3X2_RVT)                 0.11    344.60 r
+  u_core/ctmi_14101/Y (NAND2X2_RVT)                0.09    344.68 f
+  u_core/A15355/Y (OR2X4_RVT)                      0.09    344.77 f
+  u_core/ctmi_14222/Y (AND4X1_RVT)                 0.13    344.90 f
+  u_core/ctmi_14337/Y (AND4X1_RVT)                 0.12    345.02 f
+  u_core/ctmi_14336/Y (AND4X1_RVT)                 0.11    345.13 f
+  u_core/ctmi_14335/Y (AND4X1_RVT)                 0.12    345.25 f
+  u_core/ctmi_14334/Y (NAND3X0_RVT)                0.05    345.30 r
+  u_core/ctmi_14333/Y (AOI221X2_RVT)               0.10    345.40 f
+  u_core/ctmi_14351/Y (AND3X1_RVT)                 0.08    345.49 f
+  u_core/ctmi_14350/Y (NAND4X0_RVT)                0.05    345.53 r
+  u_core/rvx_bootloader_rom_instance/rdata_reg[8]/SETB (SDFFSSRX1_RVT)
+                                                   0.00    345.53 r
+  data arrival time                                        345.53
+
+  clock RVX_CLK (rise edge)                       30.00     30.00
+  clock network delay (propagated)               314.30    344.30
+  u_core/rvx_bootloader_rom_instance/rdata_reg[8]/CLK (SDFFSSRX1_RVT)
+                                                   0.00    344.30 r
+  clock uncertainty                               -1.00    343.30
+  library setup time                             -73.60    269.70
+  data required time                                       269.70
+  ------------------------------------------------------------------------
+  data required time                                       269.70
+  data arrival time                                        -345.53
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -75.83
+
+
+
+  Startpoint: u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_bootloader_rom_instance/rdata_reg[5] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ss
+  Scenario: functional_ss
+  Path Group: RVX_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               314.30    314.30
+
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/CLK (SDFFX2_RVT)
+                                                   0.00    314.30 r
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/Q (SDFFX2_RVT)
+                                                  26.37    340.67 r
+  u_core/ctmi_14515/Y (AOI222X1_RVT)               0.53    341.20 f
+  u_core/rvx_core_instance/copt_gre_mt_inst_49534/Y (NBUFFX4_RVT)
+                                                   0.09    341.29 f
+  u_core/rvx_core_instance/ZBUF_2_inst_32731/Y (NBUFFX8_RVT)
+                                                   0.05    341.34 f
+  u_core/rvx_core_instance/HFSINV_34_18894/Y (INVX4_RVT)
+                                                   0.03    341.37 r
+  u_core/rvx_core_instance/ctmi_39815/Y (AO221X1_RVT)
+                                                   0.12    341.49 r
+  u_core/rvx_core_instance/ctmi_39814/Y (OR3X2_RVT)
+                                                   0.13    341.63 r
+  u_core/rvx_core_instance/ctmi_40978/Y (AO22X1_RVT)
+                                                   0.09    341.72 r
+  u_core/rvx_core_instance/gre_BUF_13_inst_49746/Y (DELLN1X2_RVT)
+                                                   0.23    341.95 r
+  u_core/rvx_core_instance/HFSINV_109_18997/Y (INVX1_RVT)
+                                                   0.03    341.98 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43568/Y (AO22X1_RVT)
+                                                   0.06    342.04 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43566/Y (OA222X1_RVT)
+                                                   0.10    342.14 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43562/Y (OA222X1_RVT)
+                                                   0.08    342.23 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43558/Y (OA222X1_RVT)
+                                                   0.09    342.31 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43554/Y (OA222X1_RVT)
+                                                   0.08    342.39 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43550/Y (OA222X1_RVT)
+                                                   0.08    342.47 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43546/Y (OA222X1_RVT)
+                                                   0.08    342.56 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43542/Y (OA222X1_RVT)
+                                                   0.08    342.64 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43538/Y (OA222X1_RVT)
+                                                   0.09    342.72 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43534/Y (OA222X1_RVT)
+                                                   0.08    342.81 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43530/Y (OA222X1_RVT)
+                                                   0.08    342.89 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43526/Y (OA222X1_RVT)
+                                                   0.08    342.97 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43522/Y (OA222X1_RVT)
+                                                   0.08    343.05 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43518/Y (OA222X1_RVT)
+                                                   0.08    343.14 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43513/Y (OA222X1_RVT)
+                                                   0.09    343.23 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43508/Y (NAND4X0_RVT)
+                                                   0.06    343.29 r
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43581/Y (OA21X1_RVT)
+                                                   0.09    343.38 r
+  u_core/rvx_core_instance/phfnr_buf_16857/Y (INVX2_RVT)
+                                                   0.03    343.41 f
+  u_core/rvx_core_instance/ctmTdsLR_1_21949/Y (OA222X1_RVT)
+                                                   0.12    343.53 f
+  u_core/rvx_core_instance/ctmi_38682/Y (OR4X2_RVT)
+                                                   0.12    343.65 f
+  u_core/rvx_core_instance/ctmi_38675/Y (AND4X1_RVT)
+                                                   0.08    343.73 f
+  u_core/rvx_core_instance/ctmTdsLR_1_21415/Y (OAI222X2_RVT)
+                                                   0.13    343.86 r
+  u_core/rvx_core_instance/HFSINV_242_19742/Y (INVX4_RVT)
+                                                   0.03    343.89 f
+  u_core/rvx_core_instance/ctmTdsLR_1_21688/Y (NAND2X0_RVT)
+                                                   0.06    343.94 r
+  u_core/rvx_core_instance/ctmTdsLR_2_21689/Y (INVX2_RVT)
+                                                   0.04    343.98 f
+  u_core/rvx_core_instance/ZBUF_984_inst_34803/Y (NBUFFX16_RVT)
+                                                   0.06    344.04 f
+  u_core/rvx_core_instance/ctmi_41750/Y (AO221X2_RVT)
+                                                   0.12    344.16 f
+  u_core/rvx_core_instance/ctmi_41749/Y (AO22X2_RVT)
+                                                   0.13    344.29 f
+  u_core/ctmi_13816/Y (NOR2X2_RVT)                 0.11    344.40 r
+  u_core/ctmi_13851/Y (AND4X1_RVT)                 0.15    344.55 r
+  u_core/ctmi_13850/Y (AND2X2_RVT)                 0.11    344.66 r
+  u_core/ctmi_14080/Y (NAND2X2_RVT)                0.09    344.75 f
+  u_core/ctmi_14078/Y (AND2X2_RVT)                 0.08    344.82 f
+  u_core/ctmi_14219/Y (OA21X2_RVT)                 0.10    344.92 f
+  u_core/ctmi_18482/Y (OA221X1_RVT)                0.09    345.01 f
+  u_core/ctmi_14369/Y (AND4X1_RVT)                 0.11    345.12 f
+  u_core/ctmi_14368/Y (AND4X1_RVT)                 0.12    345.24 f
+  u_core/ctmi_14364/Y (NAND3X0_RVT)                0.06    345.30 r
+  u_core/rvx_bootloader_rom_instance/rdata_reg[5]/SETB (SDFFSSRX1_RVT)
+                                                   0.00    345.30 r
+  data arrival time                                        345.30
+
+  clock RVX_CLK (rise edge)                       30.00     30.00
+  clock network delay (propagated)               314.30    344.30
+  u_core/rvx_bootloader_rom_instance/rdata_reg[5]/CLK (SDFFSSRX1_RVT)
+                                                   0.00    344.30 r
+  clock uncertainty                               -1.00    343.30
+  library setup time                             -65.55    277.75
+  data required time                                       277.75
+  ------------------------------------------------------------------------
+  data required time                                       277.75
+  data arrival time                                        -345.30
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -67.55
+
+
+
+  Startpoint: u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_bootloader_rom_instance/rdata_reg[3] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ss
+  Scenario: functional_ss
+  Path Group: RVX_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               314.30    314.30
+
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/CLK (SDFFX2_RVT)
+                                                   0.00    314.30 r
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/Q (SDFFX2_RVT)
+                                                  26.37    340.67 r
+  u_core/ctmi_14515/Y (AOI222X1_RVT)               0.53    341.20 f
+  u_core/rvx_core_instance/copt_gre_mt_inst_49534/Y (NBUFFX4_RVT)
+                                                   0.09    341.29 f
+  u_core/rvx_core_instance/ZBUF_2_inst_32731/Y (NBUFFX8_RVT)
+                                                   0.05    341.34 f
+  u_core/rvx_core_instance/HFSINV_34_18894/Y (INVX4_RVT)
+                                                   0.03    341.37 r
+  u_core/rvx_core_instance/ctmi_39815/Y (AO221X1_RVT)
+                                                   0.12    341.49 r
+  u_core/rvx_core_instance/ctmi_39814/Y (OR3X2_RVT)
+                                                   0.13    341.63 r
+  u_core/rvx_core_instance/ctmi_40978/Y (AO22X1_RVT)
+                                                   0.09    341.72 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/ctmi_10653/Y (AO22X1_RVT)
+                                                   0.11    341.82 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_10/CO (FADDX2_RVT)
+                                                   0.11    341.94 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_13/CO (FADDX2_RVT)
+                                                   0.10    342.04 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_15/CO (FADDX2_RVT)
+                                                   0.10    342.14 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_18/CO (FADDX1_RVT)
+                                                   0.11    342.25 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_20/CO (FADDX2_RVT)
+                                                   0.11    342.36 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_23/CO (FADDX1_RVT)
+                                                   0.10    342.46 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_25/CO (FADDX2_RVT)
+                                                   0.10    342.57 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_28/CO (FADDX2_RVT)
+                                                   0.10    342.67 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_30/CO (FADDX2_RVT)
+                                                   0.10    342.77 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_33/CO (FADDX2_RVT)
+                                                   0.10    342.87 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_35/CO (FADDX1_RVT)
+                                                   0.10    342.98 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_38/CO (FADDX1_RVT)
+                                                   0.10    343.08 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_40/CO (FADDX2_RVT)
+                                                   0.10    343.18 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_43/CO (FADDX1_RVT)
+                                                   0.10    343.28 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_45/CO (FADDX2_RVT)
+                                                   0.10    343.39 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_48/CO (FADDX2_RVT)
+                                                   0.10    343.49 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_50/CO (FADDX1_RVT)
+                                                   0.10    343.59 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_53/CO (FADDX1_RVT)
+                                                   0.10    343.69 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_55/CO (FADDX2_RVT)
+                                                   0.10    343.79 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_58/CO (FADDX1_RVT)
+                                                   0.10    343.89 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_60/CO (FADDX2_RVT)
+                                                   0.10    344.00 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_63/CO (FADDX2_RVT)
+                                                   0.10    344.10 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_65/CO (FADDX2_RVT)
+                                                   0.10    344.20 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_68/CO (FADDX2_RVT)
+                                                   0.11    344.32 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_70/CO (FADDX2_RVT)
+                                                   0.11    344.42 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_73/CO (FADDX2_RVT)
+                                                   0.10    344.53 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_75/S (FADDX2_RVT)
+                                                   0.09    344.62 r
+  u_core/rvx_core_instance/ropt_d_inst_57521/Y (NBUFFX8_RVT)
+                                                   0.06    344.68 r
+  u_core/rvx_core_instance/ctmi_41617/Y (AO221X2_RVT)
+                                                   0.12    344.80 r
+  u_core/rvx_core_instance/ctmi_41616/Y (AO22X1_RVT)
+                                                   0.12    344.92 r
+  u_core/ctmi_13904/Y (NOR4X1_RVT)                 0.11    345.03 f
+  u_core/ctmi_13901/Y (AND3X1_RVT)                 0.08    345.11 f
+  u_core/ctmi_14929/Y (AND3X1_RVT)                 0.09    345.20 f
+  u_core/phfnr_buf_16403/Y (INVX2_RVT)             0.03    345.22 r
+  u_core/ctmi_15027/Y (OR3X4_RVT)                  0.13    345.36 r
+  u_core/rvx_bootloader_rom_instance/rdata_reg[3]/D (SDFFSSRX1_RVT)
+                                                   0.00    345.36 r
+  data arrival time                                        345.36
+
+  clock RVX_CLK (rise edge)                       30.00     30.00
+  clock network delay (propagated)               314.30    344.30
+  u_core/rvx_bootloader_rom_instance/rdata_reg[3]/CLK (SDFFSSRX1_RVT)
+                                                   0.00    344.30 r
+  clock uncertainty                               -1.00    343.30
+  library setup time                             -64.42    278.88
+  data required time                                       278.88
+  ------------------------------------------------------------------------
+  data required time                                       278.88
+  data arrival time                                        -345.36
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -66.48
+
+
+
+  Startpoint: u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_bootloader_rom_instance/rdata_reg[5] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ss
+  Scenario: functional_ss
+  Path Group: RVX_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               314.30    314.30
+
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/CLK (SDFFX2_RVT)
+                                                   0.00    314.30 r
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/Q (SDFFX2_RVT)
+                                                  26.37    340.67 r
+  u_core/ctmi_14515/Y (AOI222X1_RVT)               0.53    341.20 f
+  u_core/rvx_core_instance/copt_gre_mt_inst_49534/Y (NBUFFX4_RVT)
+                                                   0.09    341.29 f
+  u_core/rvx_core_instance/ZBUF_2_inst_32731/Y (NBUFFX8_RVT)
+                                                   0.05    341.34 f
+  u_core/rvx_core_instance/HFSINV_34_18894/Y (INVX4_RVT)
+                                                   0.03    341.37 r
+  u_core/rvx_core_instance/ctmi_39815/Y (AO221X1_RVT)
+                                                   0.12    341.49 r
+  u_core/rvx_core_instance/ctmi_39814/Y (OR3X2_RVT)
+                                                   0.13    341.63 r
+  u_core/rvx_core_instance/ctmi_40978/Y (AO22X1_RVT)
+                                                   0.09    341.72 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/ctmi_10653/Y (AO22X1_RVT)
+                                                   0.11    341.82 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_10/CO (FADDX2_RVT)
+                                                   0.11    341.94 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_13/CO (FADDX2_RVT)
+                                                   0.10    342.04 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_15/CO (FADDX2_RVT)
+                                                   0.10    342.14 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_18/CO (FADDX1_RVT)
+                                                   0.11    342.25 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_20/CO (FADDX2_RVT)
+                                                   0.11    342.36 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_23/CO (FADDX1_RVT)
+                                                   0.10    342.46 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_25/CO (FADDX2_RVT)
+                                                   0.10    342.57 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_28/CO (FADDX2_RVT)
+                                                   0.10    342.67 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_30/CO (FADDX2_RVT)
+                                                   0.10    342.77 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_33/CO (FADDX2_RVT)
+                                                   0.10    342.87 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_35/CO (FADDX1_RVT)
+                                                   0.10    342.98 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_38/CO (FADDX1_RVT)
+                                                   0.10    343.08 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_40/CO (FADDX2_RVT)
+                                                   0.10    343.18 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_43/CO (FADDX1_RVT)
+                                                   0.10    343.28 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_45/CO (FADDX2_RVT)
+                                                   0.10    343.39 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_48/CO (FADDX2_RVT)
+                                                   0.10    343.49 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_50/CO (FADDX1_RVT)
+                                                   0.10    343.59 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_53/CO (FADDX1_RVT)
+                                                   0.10    343.69 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_55/CO (FADDX2_RVT)
+                                                   0.10    343.79 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_58/CO (FADDX1_RVT)
+                                                   0.10    343.89 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_60/CO (FADDX2_RVT)
+                                                   0.10    344.00 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_63/CO (FADDX2_RVT)
+                                                   0.10    344.10 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_65/CO (FADDX2_RVT)
+                                                   0.10    344.20 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_68/CO (FADDX2_RVT)
+                                                   0.11    344.32 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_70/CO (FADDX2_RVT)
+                                                   0.11    344.42 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_73/CO (FADDX2_RVT)
+                                                   0.10    344.53 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_75/S (FADDX2_RVT)
+                                                   0.09    344.62 r
+  u_core/rvx_core_instance/ropt_d_inst_57521/Y (NBUFFX8_RVT)
+                                                   0.06    344.68 r
+  u_core/rvx_core_instance/ctmi_41617/Y (AO221X2_RVT)
+                                                   0.12    344.80 r
+  u_core/rvx_core_instance/ctmi_41616/Y (AO22X1_RVT)
+                                                   0.12    344.92 r
+  u_core/ctmi_13904/Y (NOR4X1_RVT)                 0.11    345.03 f
+  u_core/ctmi_13901/Y (AND3X1_RVT)                 0.08    345.11 f
+  u_core/ctmi_14929/Y (AND3X1_RVT)                 0.09    345.20 f
+  u_core/phfnr_buf_16403/Y (INVX2_RVT)             0.03    345.22 r
+  u_core/ctmi_15027/Y (OR3X4_RVT)                  0.13    345.36 r
+  u_core/rvx_bootloader_rom_instance/rdata_reg[5]/D (SDFFSSRX1_RVT)
+                                                   0.00    345.36 r
+  data arrival time                                        345.36
+
+  clock RVX_CLK (rise edge)                       30.00     30.00
+  clock network delay (propagated)               314.30    344.30
+  u_core/rvx_bootloader_rom_instance/rdata_reg[5]/CLK (SDFFSSRX1_RVT)
+                                                   0.00    344.30 r
+  clock uncertainty                               -1.00    343.30
+  library setup time                             -64.42    278.88
+  data required time                                       278.88
+  ------------------------------------------------------------------------
+  data required time                                       278.88
+  data arrival time                                        -345.36
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -66.48
+
+
+
+  Startpoint: u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_bootloader_rom_instance/rdata_reg[8] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ss
+  Scenario: functional_ss
+  Path Group: RVX_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               314.30    314.30
+
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/CLK (SDFFX2_RVT)
+                                                   0.00    314.30 r
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/Q (SDFFX2_RVT)
+                                                  26.37    340.67 r
+  u_core/ctmi_14515/Y (AOI222X1_RVT)               0.53    341.20 f
+  u_core/rvx_core_instance/copt_gre_mt_inst_49534/Y (NBUFFX4_RVT)
+                                                   0.09    341.29 f
+  u_core/rvx_core_instance/ZBUF_2_inst_32731/Y (NBUFFX8_RVT)
+                                                   0.05    341.34 f
+  u_core/rvx_core_instance/HFSINV_34_18894/Y (INVX4_RVT)
+                                                   0.03    341.37 r
+  u_core/rvx_core_instance/ctmi_39815/Y (AO221X1_RVT)
+                                                   0.12    341.49 r
+  u_core/rvx_core_instance/ctmi_39814/Y (OR3X2_RVT)
+                                                   0.13    341.63 r
+  u_core/rvx_core_instance/ctmi_40978/Y (AO22X1_RVT)
+                                                   0.09    341.72 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/ctmi_10653/Y (AO22X1_RVT)
+                                                   0.11    341.82 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_10/CO (FADDX2_RVT)
+                                                   0.11    341.94 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_13/CO (FADDX2_RVT)
+                                                   0.10    342.04 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_15/CO (FADDX2_RVT)
+                                                   0.10    342.14 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_18/CO (FADDX1_RVT)
+                                                   0.11    342.25 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_20/CO (FADDX2_RVT)
+                                                   0.11    342.36 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_23/CO (FADDX1_RVT)
+                                                   0.10    342.46 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_25/CO (FADDX2_RVT)
+                                                   0.10    342.57 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_28/CO (FADDX2_RVT)
+                                                   0.10    342.67 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_30/CO (FADDX2_RVT)
+                                                   0.10    342.77 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_33/CO (FADDX2_RVT)
+                                                   0.10    342.87 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_35/CO (FADDX1_RVT)
+                                                   0.10    342.98 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_38/CO (FADDX1_RVT)
+                                                   0.10    343.08 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_40/CO (FADDX2_RVT)
+                                                   0.10    343.18 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_43/CO (FADDX1_RVT)
+                                                   0.10    343.28 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_45/CO (FADDX2_RVT)
+                                                   0.10    343.39 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_48/CO (FADDX2_RVT)
+                                                   0.10    343.49 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_50/CO (FADDX1_RVT)
+                                                   0.10    343.59 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_53/CO (FADDX1_RVT)
+                                                   0.10    343.69 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_55/CO (FADDX2_RVT)
+                                                   0.10    343.79 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_58/CO (FADDX1_RVT)
+                                                   0.10    343.89 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_60/CO (FADDX2_RVT)
+                                                   0.10    344.00 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_63/CO (FADDX2_RVT)
+                                                   0.10    344.10 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_65/CO (FADDX2_RVT)
+                                                   0.10    344.20 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_68/CO (FADDX2_RVT)
+                                                   0.11    344.32 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_70/CO (FADDX2_RVT)
+                                                   0.11    344.42 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_73/CO (FADDX2_RVT)
+                                                   0.10    344.53 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_75/S (FADDX2_RVT)
+                                                   0.09    344.62 r
+  u_core/rvx_core_instance/ropt_d_inst_57521/Y (NBUFFX8_RVT)
+                                                   0.06    344.68 r
+  u_core/rvx_core_instance/ctmi_41617/Y (AO221X2_RVT)
+                                                   0.12    344.80 r
+  u_core/rvx_core_instance/ctmi_41616/Y (AO22X1_RVT)
+                                                   0.12    344.92 r
+  u_core/ctmi_13904/Y (NOR4X1_RVT)                 0.11    345.03 f
+  u_core/ctmi_13901/Y (AND3X1_RVT)                 0.08    345.11 f
+  u_core/ctmi_14929/Y (AND3X1_RVT)                 0.09    345.20 f
+  u_core/phfnr_buf_16403/Y (INVX2_RVT)             0.03    345.22 r
+  u_core/ctmi_15027/Y (OR3X4_RVT)                  0.13    345.36 r
+  u_core/rvx_bootloader_rom_instance/rdata_reg[8]/D (SDFFSSRX1_RVT)
+                                                   0.00    345.36 r
+  data arrival time                                        345.36
+
+  clock RVX_CLK (rise edge)                       30.00     30.00
+  clock network delay (propagated)               314.30    344.30
+  u_core/rvx_bootloader_rom_instance/rdata_reg[8]/CLK (SDFFSSRX1_RVT)
+                                                   0.00    344.30 r
+  clock uncertainty                               -1.00    343.30
+  library setup time                             -64.42    278.88
+  data required time                                       278.88
+  ------------------------------------------------------------------------
+  data required time                                       278.88
+  data arrival time                                        -345.36
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -66.48
+
+
+
+  Startpoint: u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_timer_instance/read_data_reg[0] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ss
+  Scenario: functional_ss
+  Path Group: RVX_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               314.30    314.30
+
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/CLK (SDFFX2_RVT)
+                                                   0.00    314.30 r
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/Q (SDFFX2_RVT)
+                                                  26.37    340.67 r
+  u_core/ctmi_14515/Y (AOI222X1_RVT)               0.53    341.20 f
+  u_core/rvx_core_instance/copt_gre_mt_inst_49534/Y (NBUFFX4_RVT)
+                                                   0.09    341.29 f
+  u_core/rvx_core_instance/ZBUF_2_inst_32731/Y (NBUFFX8_RVT)
+                                                   0.05    341.34 f
+  u_core/rvx_core_instance/HFSINV_34_18894/Y (INVX4_RVT)
+                                                   0.03    341.37 r
+  u_core/rvx_core_instance/ctmi_39815/Y (AO221X1_RVT)
+                                                   0.12    341.49 r
+  u_core/rvx_core_instance/ctmi_39814/Y (OR3X2_RVT)
+                                                   0.13    341.63 r
+  u_core/rvx_core_instance/ctmi_40978/Y (AO22X1_RVT)
+                                                   0.09    341.72 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/ctmi_10653/Y (AO22X1_RVT)
+                                                   0.11    341.82 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_10/S (FADDX2_RVT)
+                                                   0.18    342.00 f
+  u_core/rvx_core_instance/ropt_d_inst_57452/Y (NBUFFX8_RVT)
+                                                   0.06    342.06 f
+  u_core/rvx_core_instance/ctmi_41569/Y (AOI22X2_RVT)
+                                                   0.13    342.20 r
+  u_core/HFSINV_1730_19813/Y (INVX8_RVT)           0.02    342.22 f
+  u_core/HFSINV_1610_19812/Y (INVX8_RVT)           0.03    342.25 r
+  u_core/ctmi_13395/Y (AND3X4_RVT)                 0.11    342.36 r
+  u_core/ropt_d_inst_57507/Y (NBUFFX16_RVT)        0.07    342.42 r
+  u_core/ctmi_13686/Y (AO222X1_RVT)                0.13    342.56 r
+  u_core/ctmi_13685/Y (AO221X1_RVT)                0.09    342.64 r
+  u_core/ropt_mt_inst_57211/Y (NBUFFX2_RVT)        0.07    342.71 r
+  u_core/copt_gre_mt_inst_49037/Y (NBUFFX2_RVT)    0.05    342.76 r
+  u_core/rvx_timer_instance/read_data_reg[0]/D (SDFFSSRX1_RVT)
+                                                   0.00    342.76 r
+  data arrival time                                        342.76
+
+  clock RVX_CLK (rise edge)                       30.00     30.00
+  clock network delay (propagated)               314.30    344.30
+  u_core/rvx_timer_instance/read_data_reg[0]/CLK (SDFFSSRX1_RVT)
+                                                   0.00    344.30 r
+  clock uncertainty                               -1.00    343.30
+  library setup time                             -66.87    276.43
+  data required time                                       276.43
+  ------------------------------------------------------------------------
+  data required time                                       276.43
+  data arrival time                                        -342.76
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -66.33
+
+
+
+  Startpoint: u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_uart_instance/read_data_reg[1] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ss
+  Scenario: functional_ss
+  Path Group: RVX_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               314.30    314.30
+
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/CLK (SDFFX2_RVT)
+                                                   0.00    314.30 r
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/Q (SDFFX2_RVT)
+                                                  26.37    340.67 r
+  u_core/ctmi_14515/Y (AOI222X1_RVT)               0.53    341.20 f
+  u_core/rvx_core_instance/copt_gre_mt_inst_49534/Y (NBUFFX4_RVT)
+                                                   0.09    341.29 f
+  u_core/rvx_core_instance/ZBUF_2_inst_32731/Y (NBUFFX8_RVT)
+                                                   0.05    341.34 f
+  u_core/rvx_core_instance/HFSINV_34_18894/Y (INVX4_RVT)
+                                                   0.03    341.37 r
+  u_core/rvx_core_instance/ctmi_39815/Y (AO221X1_RVT)
+                                                   0.12    341.49 r
+  u_core/rvx_core_instance/ctmi_39814/Y (OR3X2_RVT)
+                                                   0.13    341.63 r
+  u_core/rvx_core_instance/ctmi_40978/Y (AO22X1_RVT)
+                                                   0.09    341.72 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/ctmi_10653/Y (AO22X1_RVT)
+                                                   0.11    341.82 r
+  u_core/rvx_core_instance/RS_OP_200_34361_22010_J2/snps_ADD_195/U_10/S (FADDX2_RVT)
+                                                   0.18    342.00 f
+  u_core/rvx_core_instance/ropt_d_inst_57452/Y (NBUFFX8_RVT)
+                                                   0.06    342.06 f
+  u_core/rvx_core_instance/ctmi_41569/Y (AOI22X2_RVT)
+                                                   0.13    342.20 r
+  u_core/HFSINV_1730_19813/Y (INVX8_RVT)           0.02    342.22 f
+  u_core/HFSINV_1610_19812/Y (INVX8_RVT)           0.03    342.25 r
+  u_core/ctmi_13395/Y (AND3X4_RVT)                 0.11    342.36 r
+  u_core/ropt_d_inst_57507/Y (NBUFFX16_RVT)        0.07    342.42 r
+  u_core/ctmi_13612/Y (AO222X1_RVT)                0.14    342.56 r
+  u_core/copt_gre_mt_inst_49218/Y (NBUFFX2_RVT)    0.08    342.64 r
+  u_core/ZBUF_2_inst_37875/Y (NBUFFX8_RVT)         0.06    342.70 r
+  u_core/rvx_uart_instance/read_data_reg[1]/D (SDFFSSRX1_RVT)
+                                                   0.00    342.70 r
+  data arrival time                                        342.70
+
+  clock RVX_CLK (rise edge)                       30.00     30.00
+  clock network delay (propagated)               314.30    344.30
+  u_core/rvx_uart_instance/read_data_reg[1]/CLK (SDFFSSRX1_RVT)
+                                                   0.00    344.30 r
+  clock uncertainty                               -1.00    343.30
+  library setup time                             -65.41    277.88
+  data required time                                       277.88
+  ------------------------------------------------------------------------
+  data required time                                       277.88
+  data arrival time                                        -342.70
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -64.81
+
+
+
+  Startpoint: u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[0] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ss
+  Scenario: functional_ss
+  Path Group: RVX_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               314.30    314.30
+
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/CLK (SDFFX2_RVT)
+                                                   0.00    314.30 r
+  u_core/rvx_tightly_coupled_memory_instance/port1_rdata_reg[20]/Q (SDFFX2_RVT)
+                                                  26.37    340.67 r
+  u_core/ctmi_14515/Y (AOI222X1_RVT)               0.53    341.20 f
+  u_core/rvx_core_instance/copt_gre_mt_inst_49534/Y (NBUFFX4_RVT)
+                                                   0.09    341.29 f
+  u_core/rvx_core_instance/ZBUF_2_inst_32731/Y (NBUFFX8_RVT)
+                                                   0.05    341.34 f
+  u_core/rvx_core_instance/HFSINV_34_18894/Y (INVX4_RVT)
+                                                   0.03    341.37 r
+  u_core/rvx_core_instance/ctmi_39815/Y (AO221X1_RVT)
+                                                   0.12    341.49 r
+  u_core/rvx_core_instance/ctmi_39814/Y (OR3X2_RVT)
+                                                   0.13    341.63 r
+  u_core/rvx_core_instance/ctmi_40978/Y (AO22X1_RVT)
+                                                   0.09    341.72 r
+  u_core/rvx_core_instance/gre_BUF_13_inst_49746/Y (DELLN1X2_RVT)
+                                                   0.23    341.95 r
+  u_core/rvx_core_instance/HFSINV_109_18997/Y (INVX1_RVT)
+                                                   0.03    341.98 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43568/Y (AO22X1_RVT)
+                                                   0.06    342.04 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43566/Y (OA222X1_RVT)
+                                                   0.10    342.14 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43562/Y (OA222X1_RVT)
+                                                   0.08    342.23 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43558/Y (OA222X1_RVT)
+                                                   0.09    342.31 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43554/Y (OA222X1_RVT)
+                                                   0.08    342.39 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43550/Y (OA222X1_RVT)
+                                                   0.08    342.47 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43546/Y (OA222X1_RVT)
+                                                   0.08    342.56 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43542/Y (OA222X1_RVT)
+                                                   0.08    342.64 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43538/Y (OA222X1_RVT)
+                                                   0.09    342.72 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43534/Y (OA222X1_RVT)
+                                                   0.08    342.81 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43530/Y (OA222X1_RVT)
+                                                   0.08    342.89 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43526/Y (OA222X1_RVT)
+                                                   0.08    342.97 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43522/Y (OA222X1_RVT)
+                                                   0.08    343.05 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43518/Y (OA222X1_RVT)
+                                                   0.08    343.14 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43513/Y (OA222X1_RVT)
+                                                   0.09    343.23 f
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43508/Y (NAND4X0_RVT)
+                                                   0.06    343.29 r
+  u_core/rvx_core_instance/snps_CMP_148/ctmi_43581/Y (OA21X1_RVT)
+                                                   0.09    343.38 r
+  u_core/rvx_core_instance/phfnr_buf_16857/Y (INVX2_RVT)
+                                                   0.03    343.41 f
+  u_core/rvx_core_instance/ctmTdsLR_1_21949/Y (OA222X1_RVT)
+                                                   0.12    343.53 f
+  u_core/rvx_core_instance/ctmi_38676/Y (NAND4X0_RVT)
+                                                   0.07    343.60 r
+  u_core/rvx_core_instance/ctmi_38675/Y (AND4X1_RVT)
+                                                   0.10    343.70 r
+  u_core/rvx_core_instance/ctmTdsLR_1_21415/Y (OAI222X2_RVT)
+                                                   0.13    343.82 f
+  u_core/rvx_core_instance/HFSINV_242_19742/Y (INVX4_RVT)
+                                                   0.03    343.85 r
+  u_core/rvx_core_instance/ctmi_38673/Y (OA21X1_RVT)
+                                                   0.10    343.95 r
+  u_core/rvx_core_instance/ctmi_38636/Y (AND2X1_RVT)
+                                                   0.07    344.02 r
+  u_core/rvx_core_instance/ctmi_14344/Y (AND3X1_RVT)
+                                                   0.10    344.11 r
+  u_core/rvx_core_instance/HFSINV_726_19859/Y (INVX2_RVT)
+                                                   0.03    344.15 f
+  u_core/rvx_core_instance/ctmi_41276/Y (OA22X2_RVT)
+                                                   0.11    344.25 f
+  u_core/rvx_core_instance/ctmi_41278/Y (INVX4_RVT)
+                                                   0.05    344.30 r
+  u_core/ctmi_13371/Y (OA21X1_RVT)                 0.09    344.39 r
+  u_core/ZBUF_2_inst_22347/Y (NBUFFX8_RVT)         0.05    344.44 r
+  u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[0]/D (SDFFSSRX1_RVT)
+                                                   0.00    344.44 r
+  data arrival time                                        344.44
+
+  clock RVX_CLK (rise edge)                       30.00     30.00
+  clock network delay (propagated)               314.30    344.30
+  u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[0]/CLK (SDFFSSRX1_RVT)
+                                                   0.00    344.30 r
+  clock uncertainty                               -1.00    343.30
+  library setup time                             -63.04    280.25
+  data required time                                       280.25
+  ------------------------------------------------------------------------
+  data required time                                       280.25
+  data arrival time                                        -344.44
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -64.19
+
+
+1

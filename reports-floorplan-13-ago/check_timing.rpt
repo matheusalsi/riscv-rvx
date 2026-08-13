@@ -1,0 +1,53 @@
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  TCK-001      Warn   16         The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  ----------------------------------------------------------------------------------------------------
+Total messages: 16, Errors: 0, Warnings: 16, Info: 0, SevereError: 0, Fatal: 0
+
+
+Messages
+--------
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_msip_reg/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[15]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[14]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[13]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[12]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[11]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[10]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[9]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[8]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[7]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[6]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[5]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[4]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[3]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[2]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_meip_reg/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  TCK-001      Warn   16         The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  ----------------------------------------------------------------------------------------------------
+Total messages: 16, Errors: 0, Warnings: 16, Info: 0, SevereError: 0, Fatal: 0
+
+
+Messages
+--------
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_msip_reg/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[15]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[14]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[13]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[12]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[11]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[10]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[9]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[8]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[7]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[6]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[5]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[4]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[3]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_mfip_reg[2]/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+Warning: The reported endpoint 'u_core/rvx_core_instance/rvx_core_csr_file_instance/csr_mip_meip_reg/next_state' is unconstrained. Reason: 'case constant'. Mode:'functional'. (TCK-001)
+1

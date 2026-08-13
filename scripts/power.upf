@@ -1,0 +1,40 @@
+# Um dominio funcional com alimentacao separada para core e I/O.
+create_supply_net VDD
+create_supply_net VSS
+create_supply_net VDDIO
+create_supply_net VSSIO
+
+create_supply_set SS_CORE \
+    -function {power VDD} \
+    -function {ground VSS}
+
+create_supply_set SS_IO \
+    -function {power VDDIO} \
+    -function {ground VSSIO}
+
+create_power_domain PD_TOP -supply {primary SS_CORE}
+
+create_supply_port VDD   -domain PD_TOP -direction in
+create_supply_port VSS   -domain PD_TOP -direction in
+create_supply_port VDDIO -domain PD_TOP -direction in
+create_supply_port VSSIO -domain PD_TOP -direction in
+
+connect_supply_net VDD   -ports VDD
+connect_supply_net VSS   -ports VSS
+connect_supply_net VDDIO -ports VDDIO
+connect_supply_net VSSIO -ports VSSIO
+
+# As duas alimentacoes permanecem ligadas durante o modo funcional.
+set_design_attributes \
+    -elements {.} \
+    -attribute correlated_supply_group {*}
+
+add_power_state -supply SS_CORE -state ON \
+    {-supply_expr {power == {FULL_ON 0.75 0.85 0.95} && ground == {FULL_ON 0.0}}}
+
+add_power_state -supply SS_IO -state ON \
+    {-supply_expr {power == {FULL_ON 2.25 2.50 2.75} && ground == {FULL_ON 0.0}}}
+
+create_power_state_group PST_TOP
+add_power_state -group PST_TOP -state RUN \
+    {-logic_expr {SS_CORE == ON && SS_IO == ON}}

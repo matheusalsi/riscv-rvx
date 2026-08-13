@@ -13,7 +13,7 @@ module top_pad_rvx (
 );
 
     // Parameters
-    localparam TCM_SIZE_IN_BYTES      = 128;
+    localparam TCM_SIZE_IN_BYTES      = 1024;
     localparam TCM_BOOT_IMAGE_PATH    = "";
     localparam SPI_BOOT_IMAGE_ADDRESS = 32'h00000000;
     localparam GPIO_WIDTH             = 8;

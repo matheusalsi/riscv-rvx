@@ -1,0 +1,637 @@
+Warning: Scenario functional_ss is not configured for hold analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 10
+        -report_by design
+Design : top_pad_rvx
+Version: W-2024.09-SP3
+Date   : Thu Aug 13 05:53:24 2026
+****************************************
+
+  Startpoint: u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_256 (rising clock gating-check end-point clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+
+  u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5]/CLK (SDFFX1_RVT)
+                                                   0.00    117.09 r
+  u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5]/QN (SDFFX1_RVT)
+                                                  -9.03    108.06 r
+  u_core/ZBUF_86_inst_25272/Y (DELLN1X2_RVT)      -0.07    107.99 r
+  u_core/ctmTdsLR_1_21582/Y (INVX1_RVT)            0.01    108.00 f
+  u_core/ctmTdsLR_3_21584/Y (OR3X2_RVT)            0.03    108.03 f
+  u_core/ctmTdsLR_4_21585/Y (INVX8_RVT)            0.02    108.05 r
+  u_core/ctmi_18433/Y (AO221X1_RVT)                0.05    108.09 r
+  u_core/rvx_core_instance/ctmi_38232/Y (OAI222X2_RVT)
+                                                   0.04    108.13 f
+  u_core/rvx_core_instance/ctmi_14370/Y (NAND2X0_RVT)
+                                                   0.02    108.15 r
+  u_core/rvx_core_instance/ZBUF_2_inst_22396/Y (NBUFFX2_RVT)
+                                                   0.02    108.16 r
+  u_core/rvx_core_instance/ZBUF_2_inst_22280/Y (NBUFFX8_RVT)
+                                                   0.02    108.18 r
+  u_core/rvx_core_instance/ctmi_41276/Y (OA22X2_RVT)
+                                                   0.03    108.21 r
+  u_core/rvx_core_instance/ctmi_41278/Y (INVX4_RVT)
+                                                   0.01    108.22 f
+  u_core/ctmi_14816/Y (AND2X1_RVT)                 0.03    108.25 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_110974/Y (AND2X1_RVT)
+                                                   0.02    108.27 f
+  u_core/rvx_tightly_coupled_memory_instance/HFSINV_2524_20695/Y (IBUFFX32_RVT)
+                                                   0.03    108.30 r
+  u_core/rvx_tightly_coupled_memory_instance/HFSINV_1090_20690/Y (INVX4_RVT)
+                                                   0.04    108.34 f
+  u_core/rvx_tightly_coupled_memory_instance/gre_BUF_2670_inst_49958/Y (NBUFFX32_RVT)
+                                                   0.02    108.36 f
+  u_core/rvx_tightly_coupled_memory_instance/gre_BUF_1880_inst_49957/Y (NBUFFX8_RVT)
+                                                   0.03    108.39 f
+  u_core/rvx_tightly_coupled_memory_instance/gre_BUF_94_inst_49610/Y (NBUFFX8_RVT)
+                                                   0.02    108.40 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_111315/Y (AND2X1_RVT)
+                                                   0.01    108.42 f
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_256/EN (CGLPPRX8_RVT)
+                                                   0.00    108.42 f
+  data arrival time                                        108.42
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_256/CLK (CGLPPRX8_RVT)
+                                                   0.00    117.09 r
+  library hold time                              227.53    344.63
+  data required time                                       344.63
+  ------------------------------------------------------------------------
+  data required time                                       344.63
+  data arrival time                                        -108.42
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -236.21
+
+
+
+  Startpoint: u_core/rvx_gpio_instance/write_response_reg (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_core_instance/clock_gate_rvx_core_csr_file_instance/csr_mcause_code_reg (rising clock gating-check end-point clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+
+  u_core/rvx_gpio_instance/write_response_reg/CLK (SDFFX1_RVT)
+                                                   0.00    117.09 r
+  u_core/rvx_gpio_instance/write_response_reg/Q (SDFFX1_RVT)
+                                                  -9.13    107.97 f
+  u_core/ctmi_14533/Y (AO222X1_RVT)                0.02    107.99 f
+  u_core/ZBUF_2_inst_32508/Y (NBUFFX2_RVT)         0.02    108.00 f
+  u_core/ctmTdsLR_1_21699/Y (AO221X1_RVT)          0.02    108.02 f
+  u_core/ropt_mt_inst_57129/Y (NBUFFX2_RVT)        0.01    108.04 f
+  u_core/copt_gre_mt_inst_49046/Y (NBUFFX2_RVT)    0.01    108.05 f
+  u_core/ctmi_18433/Y (AO221X1_RVT)                0.03    108.08 f
+  u_core/rvx_core_instance/ctmi_38232/Y (OAI222X2_RVT)
+                                                   0.04    108.12 r
+  u_core/rvx_core_instance/HFSINV_206_19304/Y (INVX4_RVT)
+                                                   0.01    108.12 f
+  u_core/rvx_core_instance/ctmi_38256/Y (AND2X4_RVT)
+                                                   0.03    108.16 f
+  u_core/rvx_core_instance/ZBUF_28_inst_37297/Y (DELLN1X2_RVT)
+                                                   0.07    108.23 f
+  u_core/rvx_core_instance/ctmi_38704/Y (NAND2X0_RVT)
+                                                   0.01    108.24 r
+  u_core/rvx_core_instance/ZBUF_47_inst_34941/Y (NBUFFX4_RVT)
+                                                   0.02    108.26 r
+  u_core/rvx_core_instance/ctmi_38708/Y (NAND2X0_RVT)
+                                                   0.01    108.27 f
+  u_core/rvx_core_instance/ZBUF_2_inst_22438/Y (NBUFFX2_RVT)
+                                                   0.01    108.29 f
+  u_core/rvx_core_instance/ZBUF_2_inst_22060/Y (NBUFFX2_RVT)
+                                                   0.01    108.30 f
+  u_core/rvx_core_instance/clock_gate_rvx_core_csr_file_instance/csr_mcause_code_reg/EN (CGLPPRX8_RVT)
+                                                   0.00    108.30 f
+  data arrival time                                        108.30
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+  u_core/rvx_core_instance/clock_gate_rvx_core_csr_file_instance/csr_mcause_code_reg/CLK (CGLPPRX8_RVT)
+                                                   0.00    117.09 r
+  library hold time                              227.00    344.09
+  data required time                                       344.09
+  ------------------------------------------------------------------------
+  data required time                                       344.09
+  data arrival time                                        -108.30
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -235.79
+
+
+
+  Startpoint: u_core/rvx_uart_instance/tx_cycle_counter_reg[0] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/clock_gate_rvx_uart_instance/tx_cycle_counter_reg (rising clock gating-check end-point clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+
+  u_core/rvx_uart_instance/tx_cycle_counter_reg[0]/CLK (SDFFX1_RVT)
+                                                   0.00    117.09 r
+  u_core/rvx_uart_instance/tx_cycle_counter_reg[0]/Q (SDFFX1_RVT)
+                                                  -9.03    108.07 f
+  u_core/ctmi_14534/Y (OR2X1_RVT)                  0.03    108.09 f
+  u_core/ropt_mt_inst_57202/Y (NBUFFX2_RVT)        0.01    108.10 f
+  u_core/copt_gre_mt_inst_49006/Y (NBUFFX2_RVT)    0.01    108.12 f
+  u_core/ZBUF_2_inst_32555/Y (NBUFFX2_RVT)         0.01    108.13 f
+  u_core/clock_gate_rvx_uart_instance/tx_cycle_counter_reg/EN (CGLPPRX8_RVT)
+                                                   0.00    108.13 f
+  data arrival time                                        108.13
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+  u_core/clock_gate_rvx_uart_instance/tx_cycle_counter_reg/CLK (CGLPPRX8_RVT)
+                                                   0.00    117.09 r
+  library hold time                              226.82    343.91
+  data required time                                       343.91
+  ------------------------------------------------------------------------
+  data required time                                       343.91
+  data arrival time                                        -108.13
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -235.78
+
+
+
+  Startpoint: u_core/rvx_gpio_instance/write_response_reg (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_401 (rising clock gating-check end-point clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+
+  u_core/rvx_gpio_instance/write_response_reg/CLK (SDFFX1_RVT)
+                                                   0.00    117.09 r
+  u_core/rvx_gpio_instance/write_response_reg/Q (SDFFX1_RVT)
+                                                  -9.13    107.97 f
+  u_core/ctmi_14533/Y (AO222X1_RVT)                0.02    107.99 f
+  u_core/ZBUF_2_inst_32508/Y (NBUFFX2_RVT)         0.02    108.00 f
+  u_core/ctmTdsLR_1_21699/Y (AO221X1_RVT)          0.02    108.02 f
+  u_core/ropt_mt_inst_57129/Y (NBUFFX2_RVT)        0.01    108.04 f
+  u_core/copt_gre_mt_inst_49046/Y (NBUFFX2_RVT)    0.01    108.05 f
+  u_core/ctmi_18433/Y (AO221X1_RVT)                0.03    108.08 f
+  u_core/rvx_core_instance/ctmi_38232/Y (OAI222X2_RVT)
+                                                   0.04    108.12 r
+  u_core/rvx_core_instance/ctmi_14370/Y (NAND2X0_RVT)
+                                                   0.01    108.13 f
+  u_core/rvx_core_instance/ZBUF_2_inst_22396/Y (NBUFFX2_RVT)
+                                                   0.02    108.15 f
+  u_core/rvx_core_instance/ZBUF_2_inst_22280/Y (NBUFFX8_RVT)
+                                                   0.01    108.16 f
+  u_core/rvx_core_instance/HFSINV_1066_19896/Y (INVX4_RVT)
+                                                   0.01    108.17 r
+  u_core/rvx_core_instance/ctmTdsLR_1_21917/Y (AOI22X1_RVT)
+                                                   0.03    108.20 f
+  u_core/rvx_core_instance/ctmTdsLR_2_21918/Y (IBUFFX32_RVT)
+                                                   0.03    108.23 r
+  u_core/rvx_tightly_coupled_memory_instance/HFSINV_1116_19446/Y (INVX2_RVT)
+                                                   0.03    108.26 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_110996/Y (AND3X4_RVT)
+                                                   0.05    108.31 f
+  u_core/rvx_tightly_coupled_memory_instance/ropt_mt_inst_57185/Y (NBUFFX16_RVT)
+                                                   0.02    108.33 f
+  u_core/rvx_tightly_coupled_memory_instance/HFSBUF_152_19358/Y (NBUFFX4_RVT)
+                                                   0.03    108.36 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_111494/Y (AND3X2_RVT)
+                                                   0.05    108.41 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_111496/Y (AND2X1_RVT)
+                                                   0.02    108.43 f
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_401/EN (CGLPPRX8_RVT)
+                                                   0.00    108.43 f
+  data arrival time                                        108.43
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_401/CLK (CGLPPRX8_RVT)
+                                                   0.00    117.09 r
+  library hold time                              226.76    343.85
+  data required time                                       343.85
+  ------------------------------------------------------------------------
+  data required time                                       343.85
+  data arrival time                                        -108.43
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -235.42
+
+
+
+  Startpoint: u_core/rvx_gpio_instance/write_response_reg (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_10 (rising clock gating-check end-point clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+
+  u_core/rvx_gpio_instance/write_response_reg/CLK (SDFFX1_RVT)
+                                                   0.00    117.09 r
+  u_core/rvx_gpio_instance/write_response_reg/Q (SDFFX1_RVT)
+                                                  -9.13    107.97 f
+  u_core/ctmi_14533/Y (AO222X1_RVT)                0.02    107.99 f
+  u_core/ZBUF_2_inst_32508/Y (NBUFFX2_RVT)         0.02    108.00 f
+  u_core/ctmTdsLR_1_21699/Y (AO221X1_RVT)          0.02    108.02 f
+  u_core/ropt_mt_inst_57129/Y (NBUFFX2_RVT)        0.01    108.04 f
+  u_core/copt_gre_mt_inst_49046/Y (NBUFFX2_RVT)    0.01    108.05 f
+  u_core/ctmi_18433/Y (AO221X1_RVT)                0.03    108.08 f
+  u_core/rvx_core_instance/ctmi_38232/Y (OAI222X2_RVT)
+                                                   0.04    108.12 r
+  u_core/rvx_core_instance/ctmi_14370/Y (NAND2X0_RVT)
+                                                   0.01    108.13 f
+  u_core/rvx_core_instance/ZBUF_2_inst_22396/Y (NBUFFX2_RVT)
+                                                   0.02    108.15 f
+  u_core/rvx_core_instance/ZBUF_2_inst_22280/Y (NBUFFX8_RVT)
+                                                   0.01    108.16 f
+  u_core/rvx_core_instance/HFSINV_1066_19896/Y (INVX4_RVT)
+                                                   0.01    108.17 r
+  u_core/rvx_core_instance/ZBUF_264_inst_34830/Y (NBUFFX4_RVT)
+                                                   0.02    108.19 r
+  u_core/rvx_core_instance/ctmi_41563/Y (AO22X2_RVT)
+                                                   0.03    108.23 r
+  u_core/rvx_core_instance/HFSBUF_816_19445/Y (NBUFFX8_RVT)
+                                                   0.02    108.24 r
+  u_core/rvx_tightly_coupled_memory_instance/copt_gre_mt_inst_47646/Y (NBUFFX8_RVT)
+                                                   0.02    108.26 r
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_14273/Y (NOR4X1_RVT)
+                                                   0.04    108.30 f
+  u_core/rvx_tightly_coupled_memory_instance/HFSBUF_635_19386/Y (NBUFFX4_RVT)
+                                                   0.03    108.33 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_110983/Y (AND3X4_RVT)
+                                                   0.04    108.37 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_110985/Y (AND2X1_RVT)
+                                                   0.02    108.39 f
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_10/EN (CGLPPRX8_RVT)
+                                                   0.00    108.39 f
+  data arrival time                                        108.39
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_10/CLK (CGLPPRX8_RVT)
+                                                   0.00    117.09 r
+  library hold time                              224.98    342.07
+  data required time                                       342.07
+  ------------------------------------------------------------------------
+  data required time                                       342.07
+  data arrival time                                        -108.39
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -233.68
+
+
+
+  Startpoint: u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_663 (rising clock gating-check end-point clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+
+  u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5]/CLK (SDFFX1_RVT)
+                                                   0.00    117.09 r
+  u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5]/QN (SDFFX1_RVT)
+                                                  -9.03    108.06 r
+  u_core/ZBUF_86_inst_25272/Y (DELLN1X2_RVT)      -0.07    107.99 r
+  u_core/ctmTdsLR_1_21582/Y (INVX1_RVT)            0.01    108.00 f
+  u_core/ctmTdsLR_3_21584/Y (OR3X2_RVT)            0.03    108.03 f
+  u_core/ctmTdsLR_4_21585/Y (INVX8_RVT)            0.02    108.05 r
+  u_core/ctmi_18433/Y (AO221X1_RVT)                0.05    108.09 r
+  u_core/rvx_core_instance/ctmi_38232/Y (OAI222X2_RVT)
+                                                   0.04    108.13 f
+  u_core/rvx_core_instance/ctmi_14370/Y (NAND2X0_RVT)
+                                                   0.02    108.15 r
+  u_core/rvx_core_instance/ZBUF_2_inst_22396/Y (NBUFFX2_RVT)
+                                                   0.02    108.16 r
+  u_core/rvx_core_instance/ZBUF_2_inst_22280/Y (NBUFFX8_RVT)
+                                                   0.02    108.18 r
+  u_core/rvx_core_instance/ctmi_41276/Y (OA22X2_RVT)
+                                                   0.03    108.21 r
+  u_core/rvx_core_instance/ctmi_41278/Y (INVX4_RVT)
+                                                   0.01    108.22 f
+  u_core/ctmi_14816/Y (AND2X1_RVT)                 0.03    108.25 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_106475/Y (NAND2X0_RVT)
+                                                   0.02    108.27 r
+  u_core/rvx_tightly_coupled_memory_instance/ZBUF_2_inst_34849/Y (NBUFFX4_RVT)
+                                                   0.02    108.28 r
+  u_core/rvx_tightly_coupled_memory_instance/HFSINV_2817_20666/Y (INVX8_RVT)
+                                                   0.01    108.30 f
+  u_core/rvx_tightly_coupled_memory_instance/HFSINV_2524_20665/Y (IBUFFX32_RVT)
+                                                   0.04    108.33 r
+  u_core/rvx_tightly_coupled_memory_instance/HFSINV_1926_20664/Y (INVX8_RVT)
+                                                   0.02    108.36 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_111823/Y (AND2X1_RVT)
+                                                   0.03    108.39 f
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_663/EN (CGLPPRX8_RVT)
+                                                   0.00    108.39 f
+  data arrival time                                        108.39
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_663/CLK (CGLPPRX8_RVT)
+                                                   0.00    117.09 r
+  library hold time                              224.86    341.96
+  data required time                                       341.96
+  ------------------------------------------------------------------------
+  data required time                                       341.96
+  data arrival time                                        -108.39
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -233.57
+
+
+
+  Startpoint: u_core/rvx_gpio_instance/write_response_reg (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/clock_gate_rvx_i2c_instance/clear_irq_reg (rising clock gating-check end-point clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+
+  u_core/rvx_gpio_instance/write_response_reg/CLK (SDFFX1_RVT)
+                                                   0.00    117.09 r
+  u_core/rvx_gpio_instance/write_response_reg/Q (SDFFX1_RVT)
+                                                  -9.13    107.97 f
+  u_core/ctmi_14533/Y (AO222X1_RVT)                0.02    107.99 f
+  u_core/ZBUF_2_inst_32508/Y (NBUFFX2_RVT)         0.02    108.00 f
+  u_core/ctmTdsLR_1_21699/Y (AO221X1_RVT)          0.02    108.02 f
+  u_core/ropt_mt_inst_57129/Y (NBUFFX2_RVT)        0.01    108.04 f
+  u_core/copt_gre_mt_inst_49046/Y (NBUFFX2_RVT)    0.01    108.05 f
+  u_core/ctmi_18433/Y (AO221X1_RVT)                0.03    108.08 f
+  u_core/rvx_core_instance/ctmi_38232/Y (OAI222X2_RVT)
+                                                   0.04    108.12 r
+  u_core/rvx_core_instance/HFSINV_206_19304/Y (INVX4_RVT)
+                                                   0.01    108.12 f
+  u_core/rvx_core_instance/gre_d_BUF_268_inst_50069/Y (NBUFFX8_RVT)
+                                                   0.01    108.14 f
+  u_core/rvx_core_instance/ctmi_38703/Y (AND2X1_RVT)
+                                                   0.02    108.16 f
+  u_core/rvx_core_instance/ZBUF_28_inst_22137/Y (NBUFFX2_RVT)
+                                                   0.02    108.17 f
+  u_core/rvx_core_instance/HFSBUF_158_19866/Y (NBUFFX16_RVT)
+                                                   0.02    108.19 f
+  u_core/rvx_core_instance/ctmi_41571/Y (AOI22X2_RVT)
+                                                   0.04    108.23 r
+  u_core/rvx_core_instance/HFSINV_78_21267/Y (INVX16_RVT)
+                                                   0.01    108.25 f
+  u_core/ctmi_13395/Y (AND3X4_RVT)                 0.04    108.28 f
+  u_core/ropt_d_inst_57507/Y (NBUFFX16_RVT)        0.02    108.30 f
+  u_core/ZBUF_189_inst_34792/Y (NBUFFX4_RVT)       0.03    108.33 f
+  u_core/HFSINV_345_19317/Y (INVX0_RVT)            0.02    108.34 r
+  u_core/ctmi_13458/Y (NAND2X2_RVT)                0.02    108.36 f
+  u_core/clock_gate_rvx_i2c_instance/clear_irq_reg/EN (CGLPPRX8_RVT)
+                                                   0.00    108.36 f
+  data arrival time                                        108.36
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+  u_core/clock_gate_rvx_i2c_instance/clear_irq_reg/CLK (CGLPPRX8_RVT)
+                                                   0.00    117.09 r
+  library hold time                              224.80    341.90
+  data required time                                       341.90
+  ------------------------------------------------------------------------
+  data required time                                       341.90
+  data arrival time                                        -108.36
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -233.53
+
+
+
+  Startpoint: u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_385 (rising clock gating-check end-point clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+
+  u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5]/CLK (SDFFX1_RVT)
+                                                   0.00    117.09 r
+  u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5]/QN (SDFFX1_RVT)
+                                                  -9.03    108.06 r
+  u_core/ZBUF_86_inst_25272/Y (DELLN1X2_RVT)      -0.07    107.99 r
+  u_core/ctmTdsLR_1_21582/Y (INVX1_RVT)            0.01    108.00 f
+  u_core/ctmTdsLR_3_21584/Y (OR3X2_RVT)            0.03    108.03 f
+  u_core/ctmTdsLR_4_21585/Y (INVX8_RVT)            0.02    108.05 r
+  u_core/ctmi_18433/Y (AO221X1_RVT)                0.05    108.09 r
+  u_core/rvx_core_instance/ctmi_38232/Y (OAI222X2_RVT)
+                                                   0.04    108.13 f
+  u_core/rvx_core_instance/ctmi_14370/Y (NAND2X0_RVT)
+                                                   0.02    108.15 r
+  u_core/rvx_core_instance/ZBUF_2_inst_22396/Y (NBUFFX2_RVT)
+                                                   0.02    108.16 r
+  u_core/rvx_core_instance/ZBUF_2_inst_22280/Y (NBUFFX8_RVT)
+                                                   0.02    108.18 r
+  u_core/rvx_core_instance/ctmi_41276/Y (OA22X2_RVT)
+                                                   0.03    108.21 r
+  u_core/rvx_core_instance/ctmi_41278/Y (INVX4_RVT)
+                                                   0.01    108.22 f
+  u_core/ctmi_14816/Y (AND2X1_RVT)                 0.03    108.25 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_110972/Y (AND2X1_RVT)
+                                                   0.02    108.28 f
+  u_core/rvx_tightly_coupled_memory_instance/HFSINV_2514_20685/Y (IBUFFX32_RVT)
+                                                   0.03    108.30 r
+  u_core/rvx_tightly_coupled_memory_instance/HFSINV_519_20683/Y (INVX8_RVT)
+                                                   0.07    108.37 f
+  u_core/rvx_tightly_coupled_memory_instance/ropt_mt_inst_57377/Y (NBUFFX16_RVT)
+                                                   0.03    108.40 f
+  u_core/rvx_tightly_coupled_memory_instance/ZBUF_11629_inst_36933/Y (NBUFFX16_RVT)
+                                                   0.02    108.42 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_111476/Y (AND2X1_RVT)
+                                                   0.02    108.43 f
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_385/EN (CGLPPRX8_RVT)
+                                                   0.00    108.43 f
+  data arrival time                                        108.43
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_385/CLK (CGLPPRX8_RVT)
+                                                   0.00    117.09 r
+  library hold time                              224.80    341.90
+  data required time                                       341.90
+  ------------------------------------------------------------------------
+  data required time                                       341.90
+  data arrival time                                        -108.43
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -233.46
+
+
+
+  Startpoint: u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_280 (rising clock gating-check end-point clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+
+  u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5]/CLK (SDFFX1_RVT)
+                                                   0.00    117.09 r
+  u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5]/QN (SDFFX1_RVT)
+                                                  -9.03    108.06 r
+  u_core/ZBUF_86_inst_25272/Y (DELLN1X2_RVT)      -0.07    107.99 r
+  u_core/ctmTdsLR_1_21582/Y (INVX1_RVT)            0.01    108.00 f
+  u_core/ctmTdsLR_3_21584/Y (OR3X2_RVT)            0.03    108.03 f
+  u_core/ctmTdsLR_4_21585/Y (INVX8_RVT)            0.02    108.05 r
+  u_core/ctmi_18433/Y (AO221X1_RVT)                0.05    108.09 r
+  u_core/rvx_core_instance/ctmi_38232/Y (OAI222X2_RVT)
+                                                   0.04    108.13 f
+  u_core/rvx_core_instance/ctmi_14370/Y (NAND2X0_RVT)
+                                                   0.02    108.15 r
+  u_core/rvx_core_instance/ZBUF_2_inst_22396/Y (NBUFFX2_RVT)
+                                                   0.02    108.16 r
+  u_core/rvx_core_instance/ZBUF_2_inst_22280/Y (NBUFFX8_RVT)
+                                                   0.02    108.18 r
+  u_core/rvx_core_instance/ctmi_41276/Y (OA22X2_RVT)
+                                                   0.03    108.21 r
+  u_core/rvx_core_instance/ctmi_41278/Y (INVX4_RVT)
+                                                   0.01    108.22 f
+  u_core/ctmi_14816/Y (AND2X1_RVT)                 0.03    108.25 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_110974/Y (AND2X1_RVT)
+                                                   0.02    108.27 f
+  u_core/rvx_tightly_coupled_memory_instance/HFSINV_2524_20695/Y (IBUFFX32_RVT)
+                                                   0.03    108.30 r
+  u_core/rvx_tightly_coupled_memory_instance/HFSINV_1090_20690/Y (INVX4_RVT)
+                                                   0.04    108.34 f
+  u_core/rvx_tightly_coupled_memory_instance/gre_BUF_2670_inst_49958/Y (NBUFFX32_RVT)
+                                                   0.02    108.36 f
+  u_core/rvx_tightly_coupled_memory_instance/gre_BUF_1880_inst_49957/Y (NBUFFX8_RVT)
+                                                   0.03    108.39 f
+  u_core/rvx_tightly_coupled_memory_instance/gre_BUF_94_inst_49610/Y (NBUFFX8_RVT)
+                                                   0.02    108.40 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_111345/Y (AND2X1_RVT)
+                                                   0.02    108.42 f
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_280/EN (CGLPPRX8_RVT)
+                                                   0.00    108.42 f
+  data arrival time                                        108.42
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_280/CLK (CGLPPRX8_RVT)
+                                                   0.00    117.09 r
+  library hold time                              224.69    341.78
+  data required time                                       341.78
+  ------------------------------------------------------------------------
+  data required time                                       341.78
+  data arrival time                                        -108.42
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -233.36
+
+
+
+  Startpoint: u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_782 (rising clock gating-check end-point clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+
+  u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5]/CLK (SDFFX1_RVT)
+                                                   0.00    117.09 r
+  u_core/rvx_interconnect_instance/peripheral_sel_reg_reg[5]/QN (SDFFX1_RVT)
+                                                  -9.03    108.06 r
+  u_core/ZBUF_86_inst_25272/Y (DELLN1X2_RVT)      -0.07    107.99 r
+  u_core/ctmTdsLR_1_21582/Y (INVX1_RVT)            0.01    108.00 f
+  u_core/ctmTdsLR_3_21584/Y (OR3X2_RVT)            0.03    108.03 f
+  u_core/ctmTdsLR_4_21585/Y (INVX8_RVT)            0.02    108.05 r
+  u_core/ctmi_18433/Y (AO221X1_RVT)                0.05    108.09 r
+  u_core/rvx_core_instance/ctmi_38232/Y (OAI222X2_RVT)
+                                                   0.04    108.13 f
+  u_core/rvx_core_instance/ctmi_14370/Y (NAND2X0_RVT)
+                                                   0.02    108.15 r
+  u_core/rvx_core_instance/ZBUF_2_inst_22396/Y (NBUFFX2_RVT)
+                                                   0.02    108.16 r
+  u_core/rvx_core_instance/ZBUF_2_inst_22280/Y (NBUFFX8_RVT)
+                                                   0.02    108.18 r
+  u_core/rvx_core_instance/ctmi_41276/Y (OA22X2_RVT)
+                                                   0.03    108.21 r
+  u_core/rvx_core_instance/ctmi_41278/Y (INVX4_RVT)
+                                                   0.01    108.22 f
+  u_core/ctmi_14816/Y (AND2X1_RVT)                 0.03    108.25 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_110970/Y (AND2X1_RVT)
+                                                   0.03    108.28 f
+  u_core/rvx_tightly_coupled_memory_instance/HFSINV_2647_20676/Y (IBUFFX32_RVT)
+                                                   0.03    108.31 r
+  u_core/rvx_tightly_coupled_memory_instance/HFSINV_2135_20675/Y (INVX2_RVT)
+                                                   0.01    108.32 f
+  u_core/rvx_tightly_coupled_memory_instance/gre_BUF_1264_inst_50126/Y (NBUFFX32_RVT)
+                                                   0.02    108.34 f
+  u_core/rvx_tightly_coupled_memory_instance/gre_BUF_349_inst_49604/Y (NBUFFX2_RVT)
+                                                   0.03    108.37 f
+  u_core/rvx_tightly_coupled_memory_instance/ctmi_111977/Y (AND2X1_RVT)
+                                                   0.02    108.38 f
+  u_core/rvx_tightly_coupled_memory_instance/ropt_d_inst_57435/Y (NBUFFX2_RVT)
+                                                   0.01    108.40 f
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_782/EN (CGLPPRX8_RVT)
+                                                   0.00    108.40 f
+  data arrival time                                        108.40
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (propagated)               117.09    117.09
+  u_core/rvx_tightly_coupled_memory_instance/clock_gate_tcm_reg_782/CLK (CGLPPRX8_RVT)
+                                                   0.00    117.09 r
+  library hold time                              224.27    341.36
+  data required time                                       341.36
+  ------------------------------------------------------------------------
+  data required time                                       341.36
+  data arrival time                                        -108.40
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -232.96
+
+
+1

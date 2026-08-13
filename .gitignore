@@ -20,3 +20,6 @@ CMakeUserPresets.json
 
 _lc/
 _setup/
+fc*
+00_synopsys_saed32_flow/
+01_Lab_pads/

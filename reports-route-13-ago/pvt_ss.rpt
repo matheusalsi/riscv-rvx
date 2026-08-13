@@ -1,0 +1,98 @@
+****************************************
+Report : pvt
+Design : top_pad_rvx
+Version: W-2024.09-SP3
+Date   : Thu Aug  6 11:53:16 2026
+****************************************
+
+--------------------------------------------------------------------------------
+Warning: Corner corner_ss:  0 process number, 2 process label, 2 voltage, and 0 temperature mismatches. (PVT-030)
+Warning: 12920 cells affected for early, 12920 for late. (PVT-031)
+Warning: 0 port driving_cells affected for early, 0 for late. (PVT-034)
+--------------------------------------------------------------------------------
+
+Warning: Mismatched process label in corner corner_ss. (PVT-023)
+Warning: Mismatched voltage in corner corner_ss. (PVT-020)
+Library has 27 panes
+Entry 75:
+  Lib: saed32rvt_c
+  Pane: 23
+* Process Label:  specified: slow          effective: (none)      
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 0.78          static: 0.78        
+* Rail 1 (VDD) Voltage: specified: 0.75          dynamic: --            effective: 0.78          static: 0.78        
+  Rail 2 (VDDG) Voltage: specified: --            dynamic: --            effective: 0.78          static: 0.78        
+  Rail 3 (VSS) Voltage: specified: 0.00          dynamic: --            effective: 0.00          static: 0.00        
+  Temperature:    specified: 125.00        effective: 125.00      
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 12902    port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 12902    port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner corner_ss. (PVT-023)
+Warning: Mismatched voltage in corner corner_ss. (PVT-020)
+Library has 9 panes
+Entry 76:
+  Lib: saed32io_wb_5v
+  Pane: 3
+* Process Label:  specified: slow          effective: (none)      
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 1.05          static: 1.05        
+  Rail 1 (AVDD) Voltage: specified: --            dynamic: --            effective: 1.05          static: 1.05        
+* Rail 2 (VDD) Voltage: specified: 0.75          dynamic: --            effective: 1.05          static: 1.05        
+* Rail 3 (VDDIO) Voltage: specified: 2.25          dynamic: --            effective: 2.50          static: 2.50        
+  Rail 4 (AVSS) Voltage: specified: --            dynamic: --            effective: 0.00          static: 0.00        
+  Rail 5 (VSS) Voltage: specified: 0.00          dynamic: --            effective: 0.00          static: 0.00        
+  Rail 6 (VSSIO) Voltage: specified: 0.00          dynamic: --            effective: 0.00          static: 0.00        
+  Temperature:    specified: 125.00        effective: 125.00      
+  Primary rail: 3  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 18       port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 18       port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+
+
+--------------------------------------------------------------------------------
+Warning: Corner corner_ff:  0 process number, 2 process label, 2 voltage, and 0 temperature mismatches. (PVT-030)
+Warning: 12920 cells affected for early, 12920 for late. (PVT-031)
+Warning: 0 port driving_cells affected for early, 0 for late. (PVT-034)
+--------------------------------------------------------------------------------
+
+Warning: Mismatched process label in corner corner_ff. (PVT-023)
+Warning: Mismatched voltage in corner corner_ff. (PVT-020)
+Library has 27 panes
+Entry 75:
+  Lib: saed32rvt_c
+  Pane: 2
+* Process Label:  specified: fast          effective: (none)      
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 1.05          static: 1.05        
+* Rail 1 (VDD) Voltage: specified: 0.95          dynamic: --            effective: 1.05          static: 1.05        
+  Rail 2 (VDDG) Voltage: specified: --            dynamic: --            effective: 1.05          static: 1.05        
+  Rail 3 (VSS) Voltage: specified: 0.00          dynamic: --            effective: 0.00          static: 0.00        
+  Temperature:    specified: 25.00         effective: 25.00       
+  Primary rail: 1  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 12902    port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 12902    port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+Warning: Mismatched process label in corner corner_ff. (PVT-023)
+Warning: Mismatched voltage in corner corner_ff. (PVT-020)
+Library has 9 panes
+Entry 76:
+  Lib: saed32io_wb_5v
+  Pane: 4
+* Process Label:  specified: fast          effective: (none)      
+  Process Number: specified: 1             effective: 1           
+  Rail 0 (default) Voltage: specified: --            dynamic: --            effective: 1.05          static: 1.05        
+  Rail 1 (AVDD) Voltage: specified: --            dynamic: --            effective: 1.05          static: 1.05        
+* Rail 2 (VDD) Voltage: specified: 0.95          dynamic: --            effective: 1.05          static: 1.05        
+* Rail 3 (VDDIO) Voltage: specified: 2.75          dynamic: --            effective: 2.50          static: 2.50        
+  Rail 4 (AVSS) Voltage: specified: --            dynamic: --            effective: 0.00          static: 0.00        
+  Rail 5 (VSS) Voltage: specified: 0.00          dynamic: --            effective: 0.00          static: 0.00        
+  Rail 6 (VSSIO) Voltage: specified: 0.00          dynamic: --            effective: 0.00          static: 0.00        
+  Temperature:    specified: 25.00         effective: 25.00       
+  Primary rail: 3  Secondary rail: --  N-bias rail: --  P-bias rail: --
+  early cell refs: 18       port refs: 0     driving_cell refs: 0     lib refs: 0   
+  late  cell refs: 18       port refs: 0     driving_cell refs: 0     lib refs: 0   
+
+
+
+1

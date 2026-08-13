@@ -1,0 +1,442 @@
+Warning: Scenario functional_ss is not configured for hold analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 10
+        -report_by design
+Design : top_pad_rvx
+Version: W-2024.09-SP3
+Date   : Thu Aug 13 16:18:49 2026
+****************************************
+
+  Startpoint: u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_i2c_instance/cycle_counter_reg[0] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/Q (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C880/Z (WVGTECH_AND4)    0.00      0.00 r ~
+  u_core/rvx_i2c_instance/I_14/Z (WVGTECH_NOT)     0.00      0.00 f ~
+  u_core/rvx_i2c_instance/C883/Z (WVGTECH_AND2)    0.00      0.00 f ~
+  u_core/rvx_i2c_instance/I_52/Z (WVGTECH_NOT)     0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1036/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1037/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C873/Z[0] (*SELECT_OP.5_1_5_1_1_33)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/cycle_counter_reg[0]/synch_enable (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  data arrival time                                          0.00
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_core/rvx_i2c_instance/cycle_counter_reg[0]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  library hold time                                0.00      0.00
+  data required time                                         0.00
+  ------------------------------------------------------------------------
+  data required time                                         0.00
+  data arrival time                                         -0.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+
+  Startpoint: u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_i2c_instance/cycle_counter_reg[0] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/Q (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C880/Z (WVGTECH_AND4)    0.00      0.00 r ~
+  u_core/rvx_i2c_instance/I_14/Z (WVGTECH_NOT)     0.00      0.00 f ~
+  u_core/rvx_i2c_instance/C883/Z (WVGTECH_AND2)    0.00      0.00 f ~
+  u_core/rvx_i2c_instance/I_52/Z (WVGTECH_NOT)     0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1036/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1037/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C874/Z[0] (*SELECT_OP.4_16_4_1_16_65)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/cycle_counter_reg[0]/next_state (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  data arrival time                                          0.00
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_core/rvx_i2c_instance/cycle_counter_reg[0]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  library hold time                                0.00      0.00
+  data required time                                         0.00
+  ------------------------------------------------------------------------
+  data required time                                         0.00
+  data arrival time                                         -0.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+
+  Startpoint: u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_i2c_instance/cycle_counter_reg[1] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/Q (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C880/Z (WVGTECH_AND4)    0.00      0.00 r ~
+  u_core/rvx_i2c_instance/I_14/Z (WVGTECH_NOT)     0.00      0.00 f ~
+  u_core/rvx_i2c_instance/C883/Z (WVGTECH_AND2)    0.00      0.00 f ~
+  u_core/rvx_i2c_instance/I_52/Z (WVGTECH_NOT)     0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1036/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1037/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C873/Z[0] (*SELECT_OP.5_1_5_1_1_33)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/cycle_counter_reg[1]/synch_enable (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  data arrival time                                          0.00
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_core/rvx_i2c_instance/cycle_counter_reg[1]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  library hold time                                0.00      0.00
+  data required time                                         0.00
+  ------------------------------------------------------------------------
+  data required time                                         0.00
+  data arrival time                                         -0.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+
+  Startpoint: u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_i2c_instance/cycle_counter_reg[1] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/Q (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C880/Z (WVGTECH_AND4)    0.00      0.00 r ~
+  u_core/rvx_i2c_instance/I_14/Z (WVGTECH_NOT)     0.00      0.00 f ~
+  u_core/rvx_i2c_instance/C883/Z (WVGTECH_AND2)    0.00      0.00 f ~
+  u_core/rvx_i2c_instance/I_52/Z (WVGTECH_NOT)     0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1036/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1037/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C874/Z[1] (*SELECT_OP.4_16_4_1_16_65)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/cycle_counter_reg[1]/next_state (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  data arrival time                                          0.00
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_core/rvx_i2c_instance/cycle_counter_reg[1]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  library hold time                                0.00      0.00
+  data required time                                         0.00
+  ------------------------------------------------------------------------
+  data required time                                         0.00
+  data arrival time                                         -0.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+
+  Startpoint: u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_i2c_instance/cycle_counter_reg[2] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/Q (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C880/Z (WVGTECH_AND4)    0.00      0.00 r ~
+  u_core/rvx_i2c_instance/I_14/Z (WVGTECH_NOT)     0.00      0.00 f ~
+  u_core/rvx_i2c_instance/C883/Z (WVGTECH_AND2)    0.00      0.00 f ~
+  u_core/rvx_i2c_instance/I_52/Z (WVGTECH_NOT)     0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1036/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1037/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C873/Z[0] (*SELECT_OP.5_1_5_1_1_33)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/cycle_counter_reg[2]/synch_enable (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  data arrival time                                          0.00
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_core/rvx_i2c_instance/cycle_counter_reg[2]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  library hold time                                0.00      0.00
+  data required time                                         0.00
+  ------------------------------------------------------------------------
+  data required time                                         0.00
+  data arrival time                                         -0.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+
+  Startpoint: u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_i2c_instance/cycle_counter_reg[2] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/Q (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C880/Z (WVGTECH_AND4)    0.00      0.00 r ~
+  u_core/rvx_i2c_instance/I_14/Z (WVGTECH_NOT)     0.00      0.00 f ~
+  u_core/rvx_i2c_instance/C883/Z (WVGTECH_AND2)    0.00      0.00 f ~
+  u_core/rvx_i2c_instance/I_52/Z (WVGTECH_NOT)     0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1036/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1037/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C874/Z[2] (*SELECT_OP.4_16_4_1_16_65)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/cycle_counter_reg[2]/next_state (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  data arrival time                                          0.00
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_core/rvx_i2c_instance/cycle_counter_reg[2]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  library hold time                                0.00      0.00
+  data required time                                         0.00
+  ------------------------------------------------------------------------
+  data required time                                         0.00
+  data arrival time                                         -0.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+
+  Startpoint: u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_i2c_instance/cycle_counter_reg[3] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/Q (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C880/Z (WVGTECH_AND4)    0.00      0.00 r ~
+  u_core/rvx_i2c_instance/I_14/Z (WVGTECH_NOT)     0.00      0.00 f ~
+  u_core/rvx_i2c_instance/C883/Z (WVGTECH_AND2)    0.00      0.00 f ~
+  u_core/rvx_i2c_instance/I_52/Z (WVGTECH_NOT)     0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1036/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1037/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C873/Z[0] (*SELECT_OP.5_1_5_1_1_33)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/cycle_counter_reg[3]/synch_enable (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  data arrival time                                          0.00
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_core/rvx_i2c_instance/cycle_counter_reg[3]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  library hold time                                0.00      0.00
+  data required time                                         0.00
+  ------------------------------------------------------------------------
+  data required time                                         0.00
+  data arrival time                                         -0.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+
+  Startpoint: u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_i2c_instance/cycle_counter_reg[3] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/Q (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C880/Z (WVGTECH_AND4)    0.00      0.00 r ~
+  u_core/rvx_i2c_instance/I_14/Z (WVGTECH_NOT)     0.00      0.00 f ~
+  u_core/rvx_i2c_instance/C883/Z (WVGTECH_AND2)    0.00      0.00 f ~
+  u_core/rvx_i2c_instance/I_52/Z (WVGTECH_NOT)     0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1036/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1037/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C874/Z[3] (*SELECT_OP.4_16_4_1_16_65)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/cycle_counter_reg[3]/next_state (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  data arrival time                                          0.00
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_core/rvx_i2c_instance/cycle_counter_reg[3]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  library hold time                                0.00      0.00
+  data required time                                         0.00
+  ------------------------------------------------------------------------
+  data required time                                         0.00
+  data arrival time                                         -0.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+
+  Startpoint: u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_i2c_instance/cycle_counter_reg[4] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/Q (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C880/Z (WVGTECH_AND4)    0.00      0.00 r ~
+  u_core/rvx_i2c_instance/I_14/Z (WVGTECH_NOT)     0.00      0.00 f ~
+  u_core/rvx_i2c_instance/C883/Z (WVGTECH_AND2)    0.00      0.00 f ~
+  u_core/rvx_i2c_instance/I_52/Z (WVGTECH_NOT)     0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1036/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1037/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C873/Z[0] (*SELECT_OP.5_1_5_1_1_33)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/cycle_counter_reg[4]/synch_enable (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  data arrival time                                          0.00
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_core/rvx_i2c_instance/cycle_counter_reg[4]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  library hold time                                0.00      0.00
+  data required time                                         0.00
+  ------------------------------------------------------------------------
+  data required time                                         0.00
+  data arrival time                                         -0.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+
+  Startpoint: u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Endpoint: u_core/rvx_i2c_instance/cycle_counter_reg[4] (rising edge-triggered flip-flop clocked by RVX_CLK)
+  Mode: functional
+  Corner: corner_ff
+  Scenario: functional_ff
+  Path Group: RVX_CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  u_core/rvx_i2c_instance/scl_data_shift_reg_reg[17]/Q (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C880/Z (WVGTECH_AND4)    0.00      0.00 r ~
+  u_core/rvx_i2c_instance/I_14/Z (WVGTECH_NOT)     0.00      0.00 f ~
+  u_core/rvx_i2c_instance/C883/Z (WVGTECH_AND2)    0.00      0.00 f ~
+  u_core/rvx_i2c_instance/I_52/Z (WVGTECH_NOT)     0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1036/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C1037/Z (WVGTECH_AND2)   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/C874/Z[4] (*SELECT_OP.4_16_4_1_16_65)
+                                                   0.00      0.00 r ~
+  u_core/rvx_i2c_instance/cycle_counter_reg[4]/next_state (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  data arrival time                                          0.00
+
+  clock RVX_CLK (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  u_core/rvx_i2c_instance/cycle_counter_reg[4]/clocked_on (*SEQGEN.1839103_000_2)
+                                                   0.00      0.00 r
+  library hold time                                0.00      0.00
+  data required time                                         0.00
+  ------------------------------------------------------------------------
+  data required time                                         0.00
+  data arrival time                                         -0.00
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+1

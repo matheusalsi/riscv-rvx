@@ -1,0 +1,71 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : top_pad_rvx
+Version: W-2024.09-SP3
+Date   : Thu Aug 13 05:53:09 2026
+****************************************
+Information: Activity propagation will be performed for scenario functional_ss.
+Information: Doing activity propagation for mode 'functional' and corner 'corner_ss' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario functional_ss (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Running switching activity propagation in scalar mode!
+
+ **** Information : No. of simulation cycles = 6 ****
+Mode: functional
+Corner: corner_ss
+Scenario: functional_ss
+Voltage: 0.95
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+VDDIO (power) probability 1.00 (default)
+VSSIO (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port DOUT on cell PAD_CLK for parameter Cout. Lowest table value = 0.010000, highest table value = 0.750000, value = 1000.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port PADIO on cell PAD_UTX for parameter Cout. Lowest table value = 2.500000, highest table value = 80.000000, value = 0.010002 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port PADIO on cell PAD_SCLK for parameter Cout. Lowest table value = 2.500000, highest table value = 80.000000, value = 0.010002 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port PADIO on cell PAD_MOSI for parameter Cout. Lowest table value = 2.500000, highest table value = 80.000000, value = 0.010002 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port PADIO on cell PAD_CS for parameter Cout. Lowest table value = 2.500000, highest table value = 80.000000, value = 0.010002 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port PADIO on cell PAD_SDA for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.230389 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port PADIO on cell PAD_SDA for parameter Cout. Lowest table value = inf, highest table value = inf, value = 0.010002 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port PADIO on cell PAD_SCL for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.207005 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port PADIO on cell PAD_SCL for parameter Cout. Lowest table value = inf, highest table value = inf, value = 0.010002 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port PADIO on cell PAD_GPIO_0 for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.070019 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = 4.98e+11 pW ( 94.3%)
+  Net Switching Power    = 3.02e+10 pW (  5.7%)
+Total Dynamic Power      = 5.29e+11 pW (100.0%)
+
+Cell Leakage Power       = 2.32e+10 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                   -6.66e+09               3.01e+10               1.50e+09               2.49e+10    (  4.5%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             5.06e+11               7.85e+07               6.47e+09               5.12e+11    ( 92.8%)        i
+register                 -7.53e+08               2.27e+06               6.41e+09               5.66e+09    (  1.0%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             3.01e+07               3.74e+07               8.84e+09               8.91e+09    (  1.6%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     4.98e+11 pW            3.02e+10 pW            2.32e+10 pW            5.52e+11 pW
+1

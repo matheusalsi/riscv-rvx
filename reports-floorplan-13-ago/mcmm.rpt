@@ -1,0 +1,151 @@
+****************************************
+Report : mode
+Design : top_pad_rvx
+Version: W-2024.09-SP3
+Date   : Thu Aug 13 16:18:50 2026
+****************************************
+
+------------------------------------------------------------------------------------------
+Mode functional
+--------------------------------------------------------------------------------
+
+Current: true  Default: false  Empty: false
+
+Scenarios associated with this mode:
+
+                                                         Leakage   Dynamic
+Scenario            Corner          Active  Setup  Hold  Power     Power     Max_tran  Max_cap  Min_cap  Cell_em  Signal_em
+-------------------------------------------------------------------------------------------------------------------------
+functional_ff       corner_ff       true    false  true  true      true      true      true     true     false    false
+functional_ss       corner_ss       true    true   false true      true      true      true     true     false    false
+
+
+****************************************
+Report : corner
+Design : top_pad_rvx
+Version: W-2024.09-SP3
+Date   : Thu Aug 13 16:18:50 2026
+****************************************
+
+--------------------------------------------------------------------------------
+Corner corner_ff
+--------------------------------------------------------------------------------
+
+Current: true  Default: false  Empty: false
+
+Scenarios associated with this corner:
+
+                                                         Leakage   Dynamic
+Scenario            Mode            Active  Setup  Hold  Power     Power     Max_tran  Max_cap  Min_cap  Cell_em  Signal_em
+-------------------------------------------------------------------------------------------------------------------------
+functional_ff       functional      true    false  true  true      true      true      true     true     false    false
+
+
+Top-Level PVT Settings:
+  early process label             (none)
+  early process number            1.01
+  early voltage                   1.16
+    source                        UPF
+    file/line                     /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/scripts/mcmm.tcl, line 27
+  early temperature               -40.00
+    source                        hierarchical setting
+    file/line                     /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/scripts/mcmm.tcl, line 31
+
+  late process label              (none)
+  late process number             1.01
+  late voltage                    1.16
+    source                        UPF
+    file/line                     /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/scripts/mcmm.tcl, line 27
+  late temperature                -40.00
+    source                        hierarchical setting
+    file/line                     /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/scripts/mcmm.tcl, line 31
+
+
+
+
+0 objects with explicit PVT settings.
+
+
+Top-level cell timing derates:
+ data_cell derate early:   rise: 1.00    fall: 1.00  
+ clk_cell derate early:   rise: 1.00    fall: 1.00  
+ cell_check derate early:   rise: 1.00    fall: 1.00  
+ data_cell derate  late:   rise: 1.00    fall: 1.00  
+ clk_cell derate  late:   rise: 1.00    fall: 1.00  
+ cell_check derate  late:   rise: 1.00    fall: 1.00  
+
+Global net timing derates:
+ net_data, early:   rise: 1.00    fall: 1.00  
+ net_data, late:   rise: 1.00    fall: 1.00  
+ net_clock, early:   rise: 1.00    fall: 1.00  
+ net_clock, late:   rise: 1.00    fall: 1.00  
+
+
+--------------------------------------------------------------------------------
+Corner corner_ss
+--------------------------------------------------------------------------------
+
+Current: false  Default: false  Empty: false
+
+Scenarios associated with this corner:
+
+                                                         Leakage   Dynamic
+Scenario            Mode            Active  Setup  Hold  Power     Power     Max_tran  Max_cap  Min_cap  Cell_em  Signal_em
+-------------------------------------------------------------------------------------------------------------------------
+functional_ss       functional      true    true   false true      true      true      true     true     false    false
+
+
+Top-Level PVT Settings:
+  early process label             (none)
+  early process number            0.99
+  early voltage                   0.95
+    source                        UPF
+    file/line                     /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/scripts/mcmm.tcl, line 10
+  early temperature               125.00
+    source                        hierarchical setting
+    file/line                     /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/scripts/mcmm.tcl, line 14
+
+  late process label              (none)
+  late process number             0.99
+  late voltage                    0.95
+    source                        UPF
+    file/line                     /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/scripts/mcmm.tcl, line 10
+  late temperature                125.00
+    source                        hierarchical setting
+    file/line                     /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/scripts/mcmm.tcl, line 14
+
+
+
+
+0 objects with explicit PVT settings.
+
+
+Top-level cell timing derates:
+ data_cell derate early:   rise: 1.00    fall: 1.00  
+ clk_cell derate early:   rise: 1.00    fall: 1.00  
+ cell_check derate early:   rise: 1.00    fall: 1.00  
+ data_cell derate  late:   rise: 1.00    fall: 1.00  
+ clk_cell derate  late:   rise: 1.00    fall: 1.00  
+ cell_check derate  late:   rise: 1.00    fall: 1.00  
+
+Global net timing derates:
+ net_data, early:   rise: 1.00    fall: 1.00  
+ net_data, late:   rise: 1.00    fall: 1.00  
+ net_clock, early:   rise: 1.00    fall: 1.00  
+ net_clock, late:   rise: 1.00    fall: 1.00  
+
+
+****************************************
+Report : scenario
+Design : top_pad_rvx
+Version: W-2024.09-SP3
+Date   : Thu Aug 13 16:18:50 2026
+****************************************
+
+                                                                     Leakage  Dynamic                              Cell  Signal
+Name            Mode            Corner          Active  Setup  Hold  Power    Power    Max_tran  Max_cap  Min_cap  EM    EM
+----------------------------------------------------------------------------------------------------------------------------------
+functional_ff * functional      corner_ff       true    false  true  true     true     true      true     true     false false
+functional_ss * functional      corner_ss       true    true   false true     true     true      true     true     false false
+
+1

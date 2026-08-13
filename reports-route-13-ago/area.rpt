@@ -1,0 +1,23 @@
+****************************************
+Report : area
+Design : top_pad_rvx
+Version: W-2024.09-SP3
+Date   : Thu Aug 13 05:53:18 2026
+****************************************
+
+Number of ports:                          702
+Number of nets:                         58723
+Number of cells:                        57315
+Number of combinational cells:          45611
+Number of sequential cells:             11704
+Number of macros/black boxes:               0
+Number of buf/inv:                      28198
+Number of references:                     118
+
+Combinational area:                 393466.72
+Buf/Inv area:                       127393.75
+Noncombinational area:               99877.32
+Macro/Black Box area:                    0.00
+
+Total cell area:                    493344.04
+1

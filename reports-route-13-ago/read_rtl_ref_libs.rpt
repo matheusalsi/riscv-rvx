@@ -1,0 +1,17 @@
+****************************************
+Report : Reference Library Report
+Library: rvx.dlib
+Version: W-2024.09-SP3
+Date   : Thu Aug 13 00:27:43 2026
+****************************************
+
+    Name             Path                                                                              Location
+    -----------------------------------------------------------------------------------------------------------
+*+  saed32rvt_c      /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/01_Lab_pads/saed32rvt_c      /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/01_Lab_pads/saed32rvt_c
+*+  saed32rvt_pg_c   /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/01_Lab_pads/saed32rvt_pg_c   /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/01_Lab_pads/saed32rvt_pg_c
+*+  saed32rvt_dlvl_v /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/01_Lab_pads/saed32rvt_dlvl_v /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/01_Lab_pads/saed32rvt_dlvl_v
+*+  saed32rvt_ulvl_v /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/01_Lab_pads/saed32rvt_ulvl_v /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/01_Lab_pads/saed32rvt_ulvl_v
+*+  saed32io_wb_5v   /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/01_Lab_pads/saed32io_wb_5v   /home/inf01185/matheus.almeida/ci-expert/6-riscv-rvx/01_Lab_pads/saed32io_wb_5v
+    "*" = Library currently open
+    "+" = Library has technology information
+1

@@ -1,0 +1,52 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+****************************************
+Report : clock qor
+        -type summary
+Design : top_pad_rvx
+Version: W-2024.09-SP3
+Date   : Thu Aug 13 05:53:19 2026
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+================================================
+==== Summary Reporting for Corner corner_ff ====
+================================================
+
+========================================================== Summary Table for Corner corner_ff ==========================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: functional, Scenario: functional_ff
+RVX_CLK                                 M,D     10607      5     1827  18957.62  39042.70    117.09      5.13      2923         4  90817.18
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                      10607      5     1827  18957.62  39042.70    117.09      5.13      2923         4  90817.18
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+================================================
+==== Summary Reporting for Corner corner_ss ====
+================================================
+
+========================================================== Summary Table for Corner corner_ss ==========================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: functional, Scenario: functional_ss
+RVX_CLK                                 M,D     10607      5     1827  18957.62  39042.70    314.30      0.80      1211         4  90817.18
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                      10607      5     1827  18957.62  39042.70    314.30      0.80      1211         4  90817.18
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+1

@@ -1,0 +1,46 @@
+io_ring.bottom
+{{order_only} PAD_GPIO_7
+PAD_GPIO_6
+VDD_3
+VSS_3
+PAD_GPIO_5
+PAD_GPIO_4
+IOVSS_3
+IOVDD_3
+}
+;
+io_ring.left
+{{order_only} IOVDD_0
+IOVSS_0
+PAD_CLK
+PAD_RSTN
+VSS_0
+VDD_0
+PAD_URX
+PAD_UTX
+}
+;
+io_ring.right
+{{order_only} IOVDD_2
+IOVSS_2
+PAD_SDA
+PAD_SCL
+VDD_2
+VSS_2
+PAD_GPIO_0
+PAD_GPIO_1
+PAD_GPIO_2
+PAD_GPIO_3
+}
+;
+io_ring.top
+{{order_only} PAD_SCLK
+PAD_MOSI
+VSS_1
+VDD_1
+PAD_MISO
+PAD_CS
+IOVSS_1
+IOVDD_1
+}
+;
